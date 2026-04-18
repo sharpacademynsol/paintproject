@@ -1,0 +1,127 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project Name: Pentu - Painting, Building & Renovation HTML Template
+Version: 1.0
+Last Updated: November 19, 2025
+Author: HiBootstrap
+Primary Use: HTML Template for Painting, Building & Renovation Services
+
+@import "./components/global";
+@import "./components/preloader";
+@import "./components/backtoptop";
+@import "./components/pagination";
+@import "./components/header";
+@import "./components/navbar";
+@import "./components/banner";
+@import "./components/partner";
+@import "./components/what-we-do";
+@import "./components/get-to-us";
+@import "./components/services";
+@import "./components/projects";
+@import "./components/fun-fact";
+@import "./components/testimonials";
+@import "./components/working-process";
+@import "./components/team";
+@import "./components/blog";
+@import "./components/faq";
+@import "./components/marquee";
+@import "./components/subscribe";
+@import "./components/footer";
+@import "./components/get-to-know-us";
+@import "./components/why-choose-us";
+@import "./components/contact-us";
+@import "./components/consultation";
+@import "./components/about-us";
+@import "./components/my-account";
+@import "./components/products";
+@import "./components/sidebar-info";
+@import "./components/pricing";
+@import "./components/details-content";
+-------------------------------------------------------------------*/
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+@import "./variables";
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Create your own map
+$custom-colors: (
+    "gray": $gray,
+    "gray2": $gray2,
+);
+
+$font-sizes: (
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+);
+
+// Required Utilities Parts
+$utilities: (
+    "font-size": (
+        rfs: true,
+        property: font-size,
+        class: fs,
+        values: $font-sizes
+    ),
+    
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Required
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/root";
+
+// Optional Bootstrap components here
+//@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+
+// Required
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Components
+@import "./components/global";
+@import "./components/preloader";
+@import "./components/backtoptop";
+@import "./components/pagination";
+@import "./components/header";
+@import "./components/navbar";
+@import "./components/banner";
+@import "./components/partner";
+@import "./components/what-we-do";
+@import "./components/get-to-us";
+@import "./components/services";
+@import "./components/projects";
+@import "./components/fun-fact";
+@import "./components/testimonials";
+@import "./components/working-process";
+@import "./components/team";
+@import "./components/blog";
+@import "./components/faq";
+@import "./components/marquee";
+@import "./components/subscribe";
+@import "./components/footer";
+@import "./components/get-to-know-us";
+@import "./components/why-choose-us";
+@import "./components/contact-us";
+@import "./components/consultation";
+@import "./components/about-us";
+@import "./components/my-account";
+@import "./components/products";
+@import "./components/sidebar-info";
+@import "./components/pricing";
+@import "./components/details-content";

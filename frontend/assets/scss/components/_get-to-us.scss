@@ -1,0 +1,118 @@
+/* Get To Us Area Style
+============================================*/
+.get-to-know-img {
+    img {
+        border-radius: 15px;
+    }
+}
+.get-to-us {
+    background-color: $white;
+    border-radius: 15px;
+    padding: 50px 30px;
+    margin-top: 30px;
+    padding-top: 45px;
+
+    img {
+        border-radius: 15px;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    &.bg-fff5e9 {
+        background-color: #fff5e9;
+    }
+}
+.get-to-know-us-single-item {
+    background-color: $white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    
+    h3 {
+        font-size: 24px;
+    }
+}
+.get-author {
+    gap: 20px;
+    img {
+        border-radius: 50%;
+        border: 2px solid $secondary;
+    }
+    h3 {
+        font-size: 18px;
+        font-family: $body-font-family;
+        font-weight: 600;
+    }
+}
+.about-btn {
+    margin-top: 40px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+    .about-btn {
+        gap: 10px;
+    }
+    .get-to-know-us-single-item {
+        padding: 25px;
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+}
+
+/* Min width 1400px to Max width 1799px */
+@media only screen and (min-width: 1400px) and (max-width: 1799px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1799px) {
+    .get-to-know-img-wrap {
+        margin-right: 70px;
+    }
+}
+
+/* RTL Area Style
+============================================*/
+.rtl {
+   
+   @media (min-width: 1799px) {
+        .get-to-know-img-wrap {
+            margin-right: 0;
+            margin-left: 70px;
+        }
+    }
+    
+}
+
+/* Dark Mode Area Style
+============================================ */
+[for-dark-light-data-mode=for-dark] {
+    .get-to-us {
+        background-color: $dark-card-bg;
+    }
+    .get-to-know-us-single-item {
+        background-color: $dark-card-bg;
+    }
+}

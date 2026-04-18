@@ -1,0 +1,26 @@
+{
+  "name": "qatarpaint-platform",
+  "version": "1.0.0",
+  "description": "High-performance edge-first e-commerce platform for painting and renovation services",
+  "main": "worker/worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "echo 'Frontend is static - no build step required'"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "d1",
+    "r2",
+    "edge-computing",
+    "ecommerce",
+    "painting",
+    "renovation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

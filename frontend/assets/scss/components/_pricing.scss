@@ -1,0 +1,119 @@
+/* Pricing Area Style
+============================================*/
+.pricing-single-item {
+    padding: 50px 40px;
+    border-radius: 20px;
+
+    .price-header {
+        margin-bottom: 35px;
+    }
+    h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    h1 {
+        font-size: 40px;
+        margin-bottom: 0;
+        sub {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $body-font-family;
+            color: $body-color;
+        }
+    }
+    .default-btn {
+        margin-bottom: 35px;
+    }
+    ul {
+        li {
+            margin-bottom: 15px;
+            text-transform: capitalize;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+            i {
+                color: #008000;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+    .pricing-single-item {
+        padding: 25px;
+        border-radius: 10px;
+
+        h2 {
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        .price-header {
+            margin-bottom: 25px;
+        }
+        .default-btn {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pricing-single-item {
+        padding: 30px;
+
+        h2 {
+            font-size: 22px;
+        }
+        h1 {
+            font-size: 35px;
+        }
+        .price-header {
+            margin-bottom: 30px;
+        }
+        .default-btn {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+}
+
+/* Min width 1400px to Max width 1799px */
+@media only screen and (min-width: 1400px) and (max-width: 1799px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1399px) {
+
+}
+
+/* RTL Area Style
+============================================*/
+.rtl {
+   
+    
+    
+}
+
+/* Dark Mode Area Style
+============================================ */
+[for-dark-light-data-mode=for-dark] {
+
+}

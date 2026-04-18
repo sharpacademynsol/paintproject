@@ -1,0 +1,124 @@
+/* Blank Area Style
+============================================*/
+.why-choose-us-content-item {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(22, 10, 5, 0.15);
+
+    h3 {
+        font-size: 24px;
+    }
+    &:last-child {
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+.why-choose-us-img {
+    img {
+        border-radius: 15px;
+    }
+    .progress-wrap {
+        background-color: #F1EFDF;
+        padding: 30px;
+        border-radius: 15px;
+
+        .progress {
+            height: 6px;
+            border-radius: 4px;
+            background-color: rgba(22, 10, 5, 0.1);
+
+            .progress-bar {
+                height: 6px;
+                border-radius: 4px;
+            }
+        }
+        
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+    .why-choose-us-content-item {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+
+        h3 {
+            font-size: 20px;
+        }
+        .gap-30 {
+            gap: 15px;
+        }
+    }
+    .why-choose-us-img {
+        .progress-wrap {
+            padding: 25px;
+        }
+    }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+}
+
+/* Min width 1400px to Max width 1799px */
+@media only screen and (min-width: 1400px) and (max-width: 1799px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1399px) {
+
+    .why-choose-us-area {
+        .g-30 {
+            --bs-gutter-x: 30px;
+        }
+    }
+    .why-choose-us-content-item  {
+        max-width: 690px;
+    }
+    .why-choose-us-img-wrap {
+        margin-left: -40px;
+    }
+    
+}
+
+/* RTL Area Style
+============================================*/
+.rtl {
+   
+    @media (min-width: 1399px) {
+        .why-choose-us-img-wrap {
+            margin-left: 0;
+            margin-right: -40px;
+        }
+    }
+    
+}
+
+/* Dark Mode Area Style
+============================================ */
+[for-dark-light-data-mode=for-dark] {
+    .why-choose-us-content-item {
+        border-color: $dark-border-color;
+    }
+    .why-choose-us-img {
+        .progress-wrap {
+            background-color: $dark-card-bg;
+        }
+    }
+}

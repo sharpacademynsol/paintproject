@@ -1,0 +1,32 @@
+name = "qatarpaint-platform"
+main = "worker/worker.js"
+compatibility_date = "2024-01-01"
+
+# Static assets directory
+assets = { directory = "./frontend" }
+
+# Cloudflare D1 Database (comment out for initial testing)
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "qatarpaint-db"
+# database_id = "your-database-id-here"
+
+# Cloudflare R2 Storage (comment out for initial testing)
+# [[r2_buckets]]
+# binding = "R2_BUCKET"
+# bucket_name = "qatarpaint-assets"
+
+# Environment Variables
+[vars]
+ENVIRONMENT = "production"
+SITE_NAME = "Qatar Paint"
+
+# Development Settings
+[dev]
+port = 8787
+local_protocol = "http"
+
+# Routes (update with your domain)
+# [[routes]]
+# pattern = "qatarpaint.com/*"
+# zone_name = "qatarpaint.com"

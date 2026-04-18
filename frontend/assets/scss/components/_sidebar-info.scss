@@ -1,0 +1,206 @@
+/* Sidebar Info Area Style
+============================================*/
+.sidebar-info {
+    &.offcanvas.offcanvas-end {
+        width: 535px;
+    }
+    .offcanvas-header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .btn-close {
+        width: 52px;
+        height: 52px;
+        line-height: 54px;
+        text-align: center;
+        display: inline-block;
+        border: 1px solid $secondary;
+        border-radius: 100px;
+        background-image: unset;
+        font-size: 20px;
+        opacity: 1;
+        display: inline-block;
+        margin-left: auto;
+        padding: 0;
+        margin: 30px;
+        margin-bottom: 10px;
+        margin-left: auto;
+
+        &:focus {
+            box-shadow: none;
+        }
+        &:hover {
+            background-color: $primary;
+            border-color: $primary;
+            color: $white;
+        }
+    }
+    .offcanvas-body {
+        padding: 50px;
+        padding-top: 0;
+    }
+    .sidebar-single-item {
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        p {
+            margin-top: 35px;
+            margin-bottom: 25px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .newsletter-form {
+            background-color: $white;
+            padding: 20px;
+            border-radius: 20px;
+
+            .form-control {
+                height: 50px;
+                border-radius: 10px;
+                background-color: $gray2;
+            }
+            .submit-btn {
+                border-radius: 0 10px 10px 0;
+                background: $warning;
+                border: none;
+                width: 46px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+
+                &:hover {
+                    background-color: $primary;
+                }
+            }
+        }
+        .sidebar-info {
+            .info-list {
+                li {
+                    margin-bottom: 20px;
+                    gap: 13px;
+
+                    i {
+                        font-size: 22px;
+                        color: $primary;
+                    }
+                    h6 {
+                        font-size: 16px;
+                        font-family: $body-font-family;
+                    }
+                    a {
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .social-link {
+            gap: 10px;
+            li {
+                a {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 42px;
+                    text-align: center;
+                    display: inline-block;
+                    background-color: $white;
+                    text-decoration: none;
+                    border-radius: 100px;
+
+                    &:hover {
+                        background-color: $primary;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+    .sidebar-info {
+        .btn-close {
+            margin: 20px;
+            margin-left: auto;
+            margin-bottom: 0;
+        }
+        .offcanvas-header {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .offcanvas-body {
+            padding: 20px;
+            padding-top: 0;
+        }
+        .sidebar-single-item .newsletter-form {
+            h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+}
+
+/* RTL Area Style
+============================================*/
+.rtl {
+   
+    .sidebar-info {
+        .btn-close {
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+    
+}
+
+/* Dark Mode Area Style
+============================================ */
+[for-dark-light-data-mode=for-dark] {
+    .sidebar-info {
+        p {
+            color: $dark-paragraph-color;
+        }
+        .social-link {
+            li {
+                span {
+                    color: $white;
+                }
+                a {
+                    background-color: $dark-card-bg;
+                    color: $white;
+                    border-color: $dark-border-color;
+                }
+            }
+        }
+        .btn-close {
+            border-color: $white;
+            i {
+                color: $white;
+            }
+            &:hover {
+                border-color: $primary;
+            }
+        }
+        .sidebar-single-item {
+            .newsletter-form {
+                background-color: $dark-card-bg;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,122 @@
+/* Marquee Area Style
+============================================*/
+.marquee-wrapper {
+    overflow: hidden;
+
+	.marquee {
+		display:  inline-block;
+		white-space: nowrap;
+		position: relative;
+		transform: translate3d(0%, 0, 0);
+		animation-name: marquee;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+        animation-duration: 57s;
+
+        &.speed-300 {
+            animation-duration: 200s;
+        }
+	}
+	&:hover {
+		.marquee {
+			animation-play-state: paused;
+		}
+	}
+}
+@keyframes marquee {
+	0% {
+		transform: translate3d(0%, 0, 0);
+	}
+	100% {
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+.monogram {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 110px;
+    font-family: $heading-font-family;
+
+    img {
+        position: relative;
+        top: -5px;
+        right: -5px;
+        border-radius: 100px;
+        margin: 0 50px;
+    }
+    &.border-text {
+        color: transparent;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .monogram {
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: 2.9px;
+
+        img {
+            width: 50px;
+            margin: 0 30px;
+        }
+    }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width : 991px)  {
+    .monogram {
+        font-size: 40px;
+        line-height: 45px;
+        letter-spacing: 2.9px;
+    }
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width : 1199px) {
+    
+    .monogram {
+        font-size: 50px;
+        line-height: 45px;
+        letter-spacing: 2.9px;
+    } 
+}
+
+/* RTL Area Style
+============================================*/
+.rtl {
+   
+    .marquee-wrapper {
+        .marquee {
+            animation-name: marquee-rtl;
+        }
+    }
+    @keyframes marquee-rtl {
+        0% {
+            transform: translate3d(0%, 0, 0);
+        }
+        100% {
+            transform: translate3d(100%, 0, 0);
+        }
+    }
+    
+}
+
+/* Dark Mode Area Style
+============================================ */
+[for-dark-light-data-mode=for-dark] {
+    .monogram {
+       color: $white;
+    }
+    .marquee {
+        &.style-two {
+           img {
+                filter: brightness(100);
+           }
+        }
+    }
+}
