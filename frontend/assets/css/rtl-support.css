@@ -1,0 +1,195 @@
+/**
+ * RTL (Right-to-Left) Support Styles
+ * Handles layout adjustments for Arabic language
+ */
+
+/* Base RTL Styles */
+html[dir="rtl"] {
+    direction: rtl;
+    text-align: start;
+}
+
+html[dir="ltr"] {
+    direction: ltr;
+    text-align: start;
+}
+
+/* RTL Specific Adjustments */
+html[dir="rtl"] body {
+    font-family: 'Tajawal', 'Cairo', 'Noto Sans Arabic', sans-serif;
+}
+
+/* Flip margins and padding for RTL */
+html[dir="rtl"] .ms-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+html[dir="rtl"] .me-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+html[dir="rtl"] .ms-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+html[dir="rtl"] .me-0 {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Flip text alignment */
+html[dir="rtl"] .text-start {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .text-end {
+    text-align: left !important;
+}
+
+/* Flip flex direction for specific components */
+html[dir="rtl"] .navbar-nav {
+    padding-right: 0;
+}
+
+html[dir="rtl"] .dropdown-menu {
+    text-align: right;
+}
+
+/* Flip positioning */
+html[dir="rtl"] .start-0 {
+    left: auto !important;
+    right: 0 !important;
+}
+
+html[dir="rtl"] .end-0 {
+    right: auto !important;
+    left: 0 !important;
+}
+
+/* Flip borders */
+html[dir="rtl"] .border-start {
+    border-left: none !important;
+    border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+
+html[dir="rtl"] .border-end {
+    border-right: none !important;
+    border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+
+/* Language Switcher Styles */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+html[dir="rtl"] .language-switcher {
+    margin-left: 0;
+    margin-right: 15px;
+    padding-left: 0;
+    padding-right: 15px;
+    border-left: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.lang-btn.active {
+    background: #fff;
+    color: #333;
+    border-color: #fff;
+}
+
+/* Adjust header layout for RTL */
+html[dir="rtl"] .header-info {
+    direction: rtl;
+}
+
+html[dir="rtl"] .link-social-wrap {
+    direction: rtl;
+}
+
+/* Swiper RTL Support */
+html[dir="rtl"] .swiper-slide {
+    direction: ltr;
+}
+
+/* Form controls RTL */
+html[dir="rtl"] input[type="text"],
+html[dir="rtl"] input[type="email"],
+html[dir="rtl"] input[type="tel"],
+html[dir="rtl"] input[type="search"],
+html[dir="rtl"] textarea {
+    direction: rtl;
+}
+
+/* Navigation RTL */
+html[dir="rtl"] .navbar-collapse {
+    direction: rtl;
+}
+
+html[dir="rtl"] .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+/* Footer RTL */
+html[dir="rtl"] .footer-single-widget {
+    text-align: right;
+}
+
+html[dir="rtl"] .footer-single-widget .info-list li {
+    direction: rtl;
+}
+
+/* Button RTL adjustments */
+html[dir="rtl"] .btn i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+/* Card RTL */
+html[dir="rtl"] .card {
+    text-align: right;
+}
+
+/* List RTL */
+html[dir="rtl"] ul,
+html[dir="rtl"] ol {
+    padding-left: 0;
+    padding-right: 2rem;
+}
+
+/* Responsive RTL adjustments */
+@media (max-width: 991px) {
+    html[dir="rtl"] .navbar-collapse {
+        text-align: right;
+    }
+    
+    html[dir="rtl"] .language-switcher {
+        margin: 10px 0;
+        justify-content: flex-start;
+    }
+}

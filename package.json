@@ -21,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cheerio": "^1.2.0",
     "wrangler": "^3.0.0"
   }
 }

@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="zxx">
-    <head>
+<!DOCTYPE html><html lang="zxx"><head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,11 +9,16 @@
         <link rel="stylesheet" href="assets/css/tabler-icons.min.css">
         <link rel="stylesheet" href="assets/css/forma-djr.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/rtl-support.css">
 		
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" href="assets/images/favicon.png">
+		<!-- Google Fonts for Arabic -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
 		<!-- Title -->
-		<title>Qatar Paint - Professional Painting Services</title>
+		<title data-i18n="site.title">Qatar Paint - Professional Painting Services</title>
     </head> 
     <body class="bg-faf3e9">
         <!-- Start Preloader -->
@@ -33,34 +36,40 @@
                     <div class="col-xl-6 col-lg-7">
                         <ul class="d-flex flex-wrap justify-content-center justify-content-lg-start flex-md-nowrap align-items-center p-0 m-0 list-unstyled header-info">
                             <li class="d-sm-flex align-items-center gap-6">
-                                <span class="fw-semibold">Location:</span>
-                                <span>70 East 65th Street, New York City</span>
+                                <span class="fw-semibold" data-i18n="header.location">Location:</span>
+                                <span data-i18n="header.location_value">Doha, Qatar</span>
                             </li>
                             <li class="d-flex align-items-center gap-6">
-                                <span class="fw-semibold">Email:</span>
-                                <a href="/cdn-cgi/l/email-protection#88e0ede4e4e7c8f8ede6fcfda6ebe7e5" class="text-decoration-none"><span class="__cf_email__" data-cfemail="85ede0e9e9eac5f5e0ebf1f0abe6eae8">[email&#160;protected]</span></a>
+                                <span class="fw-semibold" data-i18n="header.email">Email:</span>
+                                <a href="mailto:info@qatarpaint.com" class="text-decoration-none" data-i18n="header.email_value">info@qatarpaint.com</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xl-6 col-lg-5">
                         <div class="d-flex justify-content-center justify-content-lg-end align-items-center link-social-wrap">
                             <div class="d-flex link">
-                                <a href="/about.html">About</a>
-                                <a href="/faq">FAQ</a>
-                                <a href="/testimonials">Testimonials</a>
+                                <a href="/about.html" data-i18n="header.about">About</a>
+                                <a href="/faq" data-i18n="header.faq">FAQ</a>
+                                <a href="/testimonials" data-i18n="header.testimonials">Testimonials</a>
                             </div>
 
                             <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
                                 <div class="social-link d-flex align-items-center">
-                                    <a href="https://www.facebook.com/" target="_blank">
+                                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
                                         <i class="ti ti-brand-facebook"></i>
                                     </a>
-                                    <a href="https://www.twitter.com/" target="_blank">
+                                    <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter">
                                         <i class="ti ti-brand-x"></i>
                                     </a>
-                                    <a href="https://www.instagram.com/" target="_blank">
+                                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
                                         <i class="ti ti-brand-instagram"></i>
                                     </a>
+                                </div>
+
+                                <!-- Language Switcher -->
+                                <div class="language-switcher">
+                                    <button class="lang-btn active" data-lang="en" onclick="i18n.switchLanguage('en')">EN</button>
+                                    <button class="lang-btn" data-lang="ar" onclick="i18n.switchLanguage('ar')">عربي</button>
                                 </div>
                             </div>
                         </div>
@@ -83,28 +92,28 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="/">
+                            <a class="nav-link active" href="/" data-i18n="nav.home">
                                 Home
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.pages">
                                 Pages
                             </a>
 
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="team.html">
+                                    <a class="dropdown-item" href="team.html" data-i18n="nav.team">
                                         Team
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="request-a-quote.html">
+                                    <a class="dropdown-item" href="request-a-quote.html" data-i18n="page.index.navbarSupportedContent.a_0">
                                         Request A Quote
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="my-account.html">
+                                    <a class="dropdown-item" href="my-account.html" data-i18n="nav.my_account">
                                         My Account
                                     </a>
                                 </li>
@@ -115,62 +124,62 @@
 
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a class="dropdown-item" href="products.html">
+                                            <a class="dropdown-item" href="products.html" data-i18n="nav.products">
                                                 Products
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="single-product.html">
+                                            <a class="dropdown-item" href="single-product.html" data-i18n="page.index.navbarSupportedContent.a_1">
                                                 Single Product
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="cart.html">
+                                            <a class="dropdown-item" href="cart.html" data-i18n="nav.cart">
                                                 Cart
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="checkout.html">
+                                            <a class="dropdown-item" href="checkout.html" data-i18n="nav.checkout">
                                                 Checkout
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="privacy-policy.html">
+                                    <a class="dropdown-item" href="privacy-policy.html" data-i18n="nav.privacy">
                                         Privacy Policy
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="terms-conditions.html">
-                                        Terms & Conditions
+                                    <a class="dropdown-item" href="terms-conditions.html" data-i18n="nav.terms">
+                                        Terms &amp; Conditions
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="error-404.html">
+                                    <a class="dropdown-item" href="error-404.html" data-i18n="nav.error_404">
                                         Error 404
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.services">
                                 Services
                             </a>
 
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="services.html">
+                                    <a class="dropdown-item" href="services.html" data-i18n="nav.services">
                                         Services 
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="single-service.html">
+                                    <a class="dropdown-item" href="single-service.html" data-i18n="page.index.navbarSupportedContent.a_2">
                                         Single Service
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="pricing.html">
+                                    <a class="dropdown-item" href="pricing.html" data-i18n="nav.pricing">
                                         Pricing
                                     </a>
                                 </li>
@@ -188,47 +197,47 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="single-project.html">
+                                    <a class="dropdown-item" href="single-project.html" data-i18n="page.index.navbarSupportedContent.a_3">
                                         Single Project
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.blog">
                                 Blog
                             </a>
 
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="blog.html">
+                                    <a class="dropdown-item" href="blog.html" data-i18n="nav.blog">
                                         Blog 
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="single-blog.html">
+                                    <a class="dropdown-item" href="single-blog.html" data-i18n="page.index.navbarSupportedContent.a_4">
                                         Single Blog
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="categories.html">
+                                    <a class="dropdown-item" href="categories.html" data-i18n="nav.categories">
                                         Categories
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="tags.html">
+                                    <a class="dropdown-item" href="tags.html" data-i18n="nav.tags">
                                         Tags
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="author.html">
+                                    <a class="dropdown-item" href="author.html" data-i18n="nav.author">
                                         Author
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="contact-us.html">
+                            <a class="nav-link" href="contact-us.html" data-i18n="nav.contact">
                                 Contact Us
                             </a>
                         </li>
@@ -246,7 +255,7 @@
                     </div>
                     <a href="contact-us.html" class="default-btn d-none d-sm-inline-block">
                         <div class="d-flex align-items-center gap-10">
-                            <span>Get Free Quote</span>
+                            <span data-i18n="hero.cta_primary">Get Free Quote</span>
                             <img src="assets/images/icon-right-arrow.svg" alt="icon-right-arrow">
                         </div>
                     </a>
@@ -284,7 +293,7 @@
 
                         <ul class="mobile-menu-items">
                             <li>
-                                <a class="dropdown-item active" href="index.html">
+                                <a class="dropdown-item active" href="index.html" data-i18n="page.index.offcanvasExample.a_0">
                                     Painting Company
                                 </a>
                             </li>
@@ -308,7 +317,7 @@
                         
                         <ul class="mobile-menu-items">
                            <li>
-                                <a class="dropdown-item" href="about-us.html">
+                                <a class="dropdown-item" href="about-us.html" data-i18n="page.index.offcanvasExample.a_1">
                                     About Us
                                 </a>
                             </li>
@@ -328,12 +337,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="request-a-quote.html">
+                                <a class="dropdown-item" href="request-a-quote.html" data-i18n="page.index.offcanvasExample.a_2">
                                     Request A Quote
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="my-account.html">
+                                <a class="dropdown-item" href="my-account.html" data-i18n="page.index.offcanvasExample.a_3">
                                     My Account
                                 </a>
                             </li>
@@ -343,7 +352,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-product.html">
+                                <a class="dropdown-item" href="single-product.html" data-i18n="page.index.offcanvasExample.a_4">
                                     Single Product
                                 </a>
                             </li>
@@ -358,17 +367,17 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="privacy-policy.html">
+                                <a class="dropdown-item" href="privacy-policy.html" data-i18n="footer.privacy_policy">
                                     Privacy Policy
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="terms-conditions.html">
-                                    Terms & Conditions
+                                <a class="dropdown-item" href="terms-conditions.html" data-i18n="footer.terms_conditions">
+                                    Terms &amp; Conditions
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="error-404.html">
+                                <a class="dropdown-item" href="error-404.html" data-i18n="page.index.offcanvasExample.a_5">
                                     Error 404
                                 </a>
                             </li>
@@ -387,7 +396,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-service.html">
+                                <a class="dropdown-item" href="single-service.html" data-i18n="page.index.offcanvasExample.a_6">
                                     Single Service
                                 </a>
                             </li>
@@ -411,7 +420,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-project.html">
+                                <a class="dropdown-item" href="single-project.html" data-i18n="page.index.offcanvasExample.a_7">
                                     Single Project
                                 </a>
                             </li>
@@ -430,7 +439,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-blog.html">
+                                <a class="dropdown-item" href="single-blog.html" data-i18n="page.index.offcanvasExample.a_8">
                                     Single Blog
                                 </a>
                             </li>
@@ -453,7 +462,7 @@
                     </li>
 
                     <li class="mobile-menu-list without-icon border-bottom">
-                        <a href="contact-us.html" class="nav-link">
+                        <a href="contact-us.html" class="nav-link" data-i18n="page.index.offcanvasExample.a_9">
                             Contact Us
                         </a>
                     </li>
@@ -490,12 +499,12 @@
             </div>
             <div class="offcanvas-body">
                 <div class="sidebar-single-item">
-                    <p>We pride ourselves on attention to detail reliability and a customer-first approach that ensures satisfaction from start to finish from color consultation to coat</p>
+                    <p data-i18n="page.index.offcanvasRight.p_0">We pride ourselves on attention to detail reliability and a customer-first approach that ensures satisfaction from start to finish from color consultation to coat</p>
 
                     <div class="newsletter-form">
                         <h3>Newsletter</h3>
                         <form class="position-relative z-1">
-                            <input type="email" class="form-control" placeholder="Enter Your Email">
+                            <input type="email" class="form-control" placeholder="Enter Your Email" data-i18n-placeholder="footer.email_placeholder">
                             <button type="submit" class="submit-btn position-absolute top-50 end-0 translate-middle-y">
                                 <img src="assets/images/send.svg" alt="send">
                             </button>
@@ -504,7 +513,7 @@
                 </div>
                 <div class="sidebar-single-item">
                     <div class="sidebar-info">
-                        <h3>Contact Info</h3>
+                        <h3 data-i18n="page.index.offcanvasRight.h3_0">Contact Info</h3>
 
                         <ul class="p-0 m-0 list-unstyled info-list">
                             <li class="d-flex">
@@ -513,7 +522,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <span class="fw-semibold d-block text-secondary">Location</span>
-                                    <span>70 East 65th Street, New York City</span>
+                                    <span data-i18n="page.index.offcanvasRight.span_0">70 East 65th Street, New York City</span>
                                 </div>
                             </li>
                             <li class="d-flex">
@@ -522,7 +531,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <span class="fw-semibold d-block text-secondary">Email</span>
-                                    <a href="/cdn-cgi/l/email-protection#771f121b1b183707121903025914181a"><span class="__cf_email__" data-cfemail="2c44494040436c5c49425859024f4341">[email&#160;protected]</span></a>
+                                    <a href="/cdn-cgi/l/email-protection#771f121b1b183707121903025914181a"><span class="__cf_email__" data-cfemail="2c44494040436c5c49425859024f4341">[email&amp;#160;protected]</span></a>
                                 </div>
                             </li>
                             <li class="d-flex">
@@ -538,7 +547,7 @@
                     </div>
                 </div>
                 <div class="sidebar-single-item">
-                    <h3>Follow Us</h3>
+                    <h3 data-i18n="footer.follow_us">Follow Us</h3>
                     
                     <ul class="p-0 mb-0 list-unstyled d-flex align-items-center social-link">
                         <li>
@@ -578,7 +587,7 @@
                     <div class="modal-body d-flex justify-content-center align-items-center">
                         <form class="w-100" style="max-width: 500px;">
                             <div class="position-relative">
-                                <input id="searchInput" type="text" class="form-control bg-gray border-0" placeholder="Search">
+                                <input id="searchInput" type="text" class="form-control bg-gray border-0" placeholder="Search" data-i18n-placeholder="common.search">
                                 <button class="border-0 bg-primary d-flex justify-content-center align-items-center position-absolute top-50 end-0 translate-middle-y m-2 my-0 rounded-3" type="button" style="width: 40px; height: 40px;">
                                     <i class="ti ti-search text-white"></i>
                                 </button>
@@ -596,9 +605,9 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5">
                         <div class="banner-content" data-cues="slideInUp" data-group="images" data-duration="900">
-                            <span class="top-title">BRUSHING DREAMS TO LIFE</span>
+                            <span class="top-title" data-i18n="page.index.banner_content.span_0">BRUSHING DREAMS TO LIFE</span>
                             <h1>Professional Painting <img src="assets/images/banner-text-img.jpg" class="rounded-pill" alt="banner-text-img"> Services</h1>
-                            <p>Our painting company we are committed to transforming spaces with precision passion and professionalism.</p>
+                            <p data-i18n="page.index.banner_content.p_0">Our painting company we are committed to transforming spaces with precision passion and professionalism.</p>
 
                             <div class="d-flex flex-wrap gap-30 banner-btn align-items-center">
                                 <a href="services.html" class="default-btn">
@@ -614,7 +623,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <span class="d-block name">Emergency Call</span>
+                                        <span class="d-block name" data-i18n="page.index.banner_btn.span_0">Emergency Call</span>
                                         <span class="number">+974 1234 5678</span>
                                     </div>
                                 </a>
@@ -623,7 +632,7 @@
                     </div>
                     <div class="col-lg-7">
                         <div class="banner-img position-relative z-1" data-cues="slideInUp" data-group="images" data-duration="900">
-                            <span class="monograms d-none d-lg-inline-block">painting company</span>
+                            <span class="monograms d-none d-lg-inline-block" data-i18n="page.index.banner_img.span_0">painting company</span>
                             <img src="assets/images/banner-img.png" alt="banner-img">
 
                             <div class="client-say">
@@ -634,7 +643,7 @@
                                     <i class="ti ti-star-filled"></i>
                                     <i class="ti ti-star-filled"></i>
                                 </div>
-                                <span class="rating">4.9/5 Rating</span>
+                                <span class="rating" data-i18n="page.index.banner_img.span_1">4.9/5 Rating</span>
 
                                 <ul class="px-0 mb-0 list-unstyled d-flex align-items-center user-list">
                                     <li>
@@ -647,7 +656,7 @@
                                         <img src="assets/images/user3.jpg" class="rounded-circle border border-secondary" alt="user">
                                     </li>
                                 </ul>
-                                <p><span>800k+</span> customers are work with pentu!</p>
+                                <p><span data-i18n="page.index.banner_img.span_2">800k+</span> <span data-i18n="page.index.banner_img.p_0">Trusted by thousands of satisfied customers</span></p>
                             </div>
                         </div>
                     </div>
@@ -700,11 +709,11 @@
             <div class="container mw-1690">
                 <div class="row align-items-center g-4 mb-50" data-cues="slideInUp" data-duration="900">
                     <div class="col-lg-7">
-                        <span class="top-title">what we do</span>
-                        <h2 class="main-title">Trusted Painting Solutions Company In Your Area</h2>
+                        <span class="top-title" data-i18n="page.index.content.span_0">what we do</span>
+                        <h2 class="main-title" data-i18n="page.index.content.h2_0">Trusted Painting Solutions Company In Your Area</h2>
                     </div>
                     <div class="col-lg-5">
-                        <p>Using high quality weather resistant paints and proven techniques we ensure flawless long lasting finish that stands up to the elements a touch</p>
+                        <p data-i18n="page.index.content.p_0">Using high quality weather resistant paints and proven techniques we ensure flawless long lasting finish that stands up to the elements a touch</p>
                     </div>
                 </div>
                 <div class="row g-4" data-cues="slideInUp" data-duration="900">
@@ -714,8 +723,8 @@
                                 <img src="assets/images/icon-what-we-do1.svg" alt="icon-what-we-do">
                             </div>
 
-                            <h3>Color consultation</h3>
-                            <p>Wall painting is more than just adding color about creating atmosphere enhancing style and expressing personality bold</p>
+                            <h3 data-i18n="page.index.content.h3_0">Color consultation</h3>
+                            <p data-i18n="page.index.content.p_1">Wall painting is more than just adding color about creating atmosphere enhancing style and expressing personality bold</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
@@ -724,8 +733,8 @@
                                 <img src="assets/images/icon-what-we-do2.svg" alt="icon-what-we-do">
                             </div>
 
-                            <h3>Wall painting</h3>
-                            <p>Color consultation is a personalize service designed to help you choose the perfect for palette your space refreshing</p>
+                            <h3 data-i18n="page.index.content.h3_1">Wall painting</h3>
+                            <p data-i18n="page.index.content.p_2">Color consultation is a personalize service designed to help you choose the perfect for palette your space refreshing</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
@@ -734,8 +743,8 @@
                                 <img src="assets/images/icon-what-we-do3.svg" alt="icon-what-we-do">
                             </div>
 
-                            <h3>Roller painting</h3>
-                            <p>Roller painting is a fast efficient & elements technique for achieving smooth coverage on large surfaces Ideal for walls natural</p>
+                            <h3 data-i18n="page.index.content.h3_2">Roller painting</h3>
+                            <p data-i18n="page.index.content.p_3">Roller painting is a fast efficient &amp; elements technique for achieving smooth coverage on large surfaces Ideal for walls natural</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
@@ -744,8 +753,8 @@
                                 <img src="assets/images/icon-what-we-do4.svg" alt="icon-what-we-do">
                             </div>
 
-                            <h3>Digital Foiling</h3>
-                            <p>Digital foiling is a modern technique that adds a touch of luxury and sophistication to any design using heat and pressure</p>
+                            <h3 data-i18n="page.index.content.h3_3">Digital Foiling</h3>
+                            <p data-i18n="page.index.content.p_4">Digital foiling is a modern technique that adds a touch of luxury and sophistication to any design using heat and pressure</p>
                         </div>
                     </div>
                 </div>
@@ -765,7 +774,7 @@
                                         <img src="assets/images/get-to-know1.jpg" class="ukiyo object-fit-contain" alt="get-to-know">
 
                                         <div class="get-to-us">
-                                            <h3>Company progress</h3>
+                                            <h3 data-i18n="page.index.content.h3_4">Company progress</h3>
 
                                             <div class="mb-3">
                                                 <div class="d-flex justify-content-between align-items-center mb-2">
@@ -799,9 +808,9 @@
                     <div class="col-xxl-5">
                         <div class="get-to-know-us-content" data-cues="slideInUp" data-duration="900">
                             <div class="mb-40 mt-0">
-                                <span class="top-title">Get to Know Us</span>
-                                <h2 class="main-title">Transform your space with our skilled full members</h2>
-                                <p>Perfect for business cards invitation packaging and promotional materials digital foiling enhances visual appeal and leaves a lasting impression with its elegant</p>
+                                <span class="top-title" data-i18n="page.index.get_to_know_us_content.span_0">Get to Know Us</span>
+                                <h2 class="main-title" data-i18n="page.index.get_to_know_us_content.h2_0">Transform your space with our skilled full members</h2>
+                                <p data-i18n="page.index.get_to_know_us_content.p_0">Perfect for business cards invitation packaging and promotional materials digital foiling enhances visual appeal and leaves a lasting impression with its elegant</p>
                             </div>
                             
                             <div class="row g-4">
@@ -812,8 +821,8 @@
                                             <span class="text-secondary">01</span>
                                         </div>
 
-                                        <h3>Our Mission</h3>
-                                        <p>Our mission is to deliver painting solution that enhance to character of space we touch</p>
+                                        <h3 data-i18n="page.index.get_to_know_us_content.h3_0">Our Mission</h3>
+                                        <p data-i18n="page.index.get_to_know_us_content.p_1">Our mission is to deliver painting solution that enhance to character of space we touch</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -823,8 +832,8 @@
                                             <span class="text-secondary">02</span>
                                         </div>
 
-                                        <h3>Our Vision</h3>
-                                        <p>We aim to inspire and transform through innovative sustainable and dedication to brushstroke</p>
+                                        <h3 data-i18n="page.index.get_to_know_us_content.h3_1">Our Vision</h3>
+                                        <p data-i18n="page.index.get_to_know_us_content.p_2">We aim to inspire and transform through innovative sustainable and dedication to brushstroke</p>
                                     </div>
                                 </div>
                             </div>
@@ -842,8 +851,8 @@
                                         <img src="assets/images/user4.jpg" class="rounded-circle" alt="user">
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h3>Sarah Brown</h3>
-                                        <span>CEO & Founder</span>
+                                        <h3 data-i18n="page.index.about_btn.h3_0">Sarah Brown</h3>
+                                        <span data-i18n="page.index.about_btn.span_0">CEO &amp; Founder</span>
                                     </div>
                                 </div>
                             </div>
@@ -858,8 +867,8 @@
         <div class="services-area bg-f3eade ptb-120">
             <div class="container mw-1690">
                 <div class="text-center" data-cues="slideInUp" data-duration="900">
-                    <span class="top-title">painting services</span>
-                    <h2 class="main-title mx-auto mw-100">Comprehensive Painting Services</h2>
+                    <span class="top-title" data-i18n="page.index.services_area.span_0">painting services</span>
+                    <h2 class="main-title mx-auto mw-100" data-i18n="page.index.services_area.h2_0">Comprehensive Painting Services</h2>
                 </div>
                 <div class="swiper services-slide">
                     <div class="swiper-wrapper">
@@ -870,10 +879,10 @@
                                         <img src="assets/images/icon-services1.svg" alt="icon-services">
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h3 class="mb-0">Interior Painting</h3>
+                                        <h3 class="mb-0" data-i18n="page.index.services_single_item.h3_0">Interior Painting</h3>
                                     </div>
                                 </div>
-                                <p>Interior painting is a powerful way to refresh and personalize your living or working space with the right colors and finishes it can enhance mood</p>
+                                <p data-i18n="page.index.services_single_item.p_0">Interior painting is a powerful way to refresh and personalize your living or working space with the right colors and finishes it can enhance mood</p>
                                 <span class="read-more">
                                     Read More
                                     <img src="assets/images/icon-right-arrow-black.svg" alt="icon-right-arrow-black">
@@ -889,10 +898,10 @@
                                         <img src="assets/images/icon-services2.svg" alt="icon-services">
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h3 class="mb-0">Wallpaper Design</h3>
+                                        <h3 class="mb-0" data-i18n="page.index.services_single_item.h3_1">Wallpaper Design</h3>
                                     </div>
                                 </div>
-                                <p>Wallpaper design is a creative and stylish way to elevate any interior space with texture pattern from bold prints to subtle textures wallpapers</p>
+                                <p data-i18n="page.index.services_single_item.p_1">Wallpaper design is a creative and stylish way to elevate any interior space with texture pattern from bold prints to subtle textures wallpapers</p>
 
                                 <span class="read-more">
                                     Read More
@@ -909,10 +918,10 @@
                                         <img src="assets/images/icon-services3.svg" alt="icon-services">
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h3 class="mb-0">Exterior Painting</h3>
+                                        <h3 class="mb-0" data-i18n="page.index.services_single_item.h3_2">Exterior Painting</h3>
                                     </div>
                                 </div>
-                                <p>Exterior painting is a vital part of maintaining and enhancing the appearanc and protection of It not only boosts curb appeal but also serves against</p>
+                                <p data-i18n="page.index.services_single_item.p_2">Exterior painting is a vital part of maintaining and enhancing the appearanc and protection of It not only boosts curb appeal but also serves against</p>
                                 <span class="read-more">
                                     Read More
                                     <img src="assets/images/icon-right-arrow-black.svg" alt="icon-right-arrow-black">
@@ -928,10 +937,10 @@
                                         <img src="assets/images/icon-services1.svg" alt="icon-services">
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h3 class="mb-0">Interior Painting</h3>
+                                        <h3 class="mb-0" data-i18n="page.index.services_single_item.h3_3">Interior Painting</h3>
                                     </div>
                                 </div>
-                                <p>Interior painting is a powerful way to refresh and personalize your living or working space with the right colors and finishes it can enhance mood</p>
+                                <p data-i18n="page.index.services_single_item.p_3">Interior painting is a powerful way to refresh and personalize your living or working space with the right colors and finishes it can enhance mood</p>
                                 <span class="read-more">
                                     Read More
                                     <img src="assets/images/icon-right-arrow-black.svg" alt="icon-right-arrow-black">
@@ -947,10 +956,10 @@
                                         <img src="assets/images/icon-services2.svg" alt="icon-services">
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h3 class="mb-0">Wallpaper Design</h3>
+                                        <h3 class="mb-0" data-i18n="page.index.services_single_item.h3_4">Wallpaper Design</h3>
                                     </div>
                                 </div>
-                                <p>Wallpaper design is a creative and stylish way to elevate any interior space with texture pattern from bold prints to subtle textures wallpapers</p>
+                                <p data-i18n="page.index.services_single_item.p_4">Wallpaper design is a creative and stylish way to elevate any interior space with texture pattern from bold prints to subtle textures wallpapers</p>
 
                                 <span class="read-more">
                                     Read More
@@ -967,10 +976,10 @@
                                         <img src="assets/images/icon-services3.svg" alt="icon-services">
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h3 class="mb-0">Exterior Painting</h3>
+                                        <h3 class="mb-0" data-i18n="page.index.services_single_item.h3_5">Exterior Painting</h3>
                                     </div>
                                 </div>
-                                <p>Exterior painting is a vital part of maintaining and enhancing the appearanc and protection of It not only boosts curb appeal but also serves against</p>
+                                <p data-i18n="page.index.services_single_item.p_5">Exterior painting is a vital part of maintaining and enhancing the appearanc and protection of It not only boosts curb appeal but also serves against</p>
                                 <span class="read-more">
                                     Read More
                                     <img src="assets/images/icon-right-arrow-black.svg" alt="icon-right-arrow-black">
@@ -991,22 +1000,22 @@
             <div class="container mw-1690">
                 <div class="row align-items-center g-4 mb-50" data-cues="slideInUp" data-duration="900">
                     <div class="col-lg-7">
-                        <span class="top-title">latest projects</span>
-                        <h2 class="main-title">Creating Beautiful Spaces One Wall at a Time</h2>
+                        <span class="top-title" data-i18n="page.index.content.span_1">latest projects</span>
+                        <h2 class="main-title" data-i18n="page.index.content.h2_1">Creating Beautiful Spaces One Wall at a Time</h2>
                     </div>
                     <div class="col-lg-5">
-                        <p>Unlike traditional foiling method digital foiling allows precise to application the need for dies or plates making it faster more cost effective and ideal</p>
+                        <p data-i18n="page.index.content.p_5">Unlike traditional foiling method digital foiling allows precise to application the need for dies or plates making it faster more cost effective and ideal</p>
                     </div>
                 </div>
 
-                <div  data-cues="slideInUp" data-duration="900">
+                <div data-cues="slideInUp" data-duration="900">
                     <a href="single-project.html" class="project-single-item text-decoration-none d-block">
                         <div class="row g-4 align-items-center">
                             <div class="col-lg-6">
                                 <div class="project-content">
                                     <span class="top-title">interior</span>
-                                    <h3>Living Room Decoration</h3>
-                                    <p>Unlike traditional foiling methods, digital foiling allows for precise application without the need for dies or plates, making it faster, more cost-effective, and ideal for short runs or custom designs</p>
+                                    <h3 data-i18n="page.index.project_content.h3_0">Living Room Decoration</h3>
+                                    <p data-i18n="page.index.project_content.p_0">Unlike traditional foiling methods, digital foiling allows for precise application without the need for dies or plates, making it faster, more cost-effective, and ideal for short runs or custom designs</p>
                                     
                                     <span class="read-more-icon">
                                         <img src="assets/images/icon-right-arrow-color.svg" class="arrow-img" alt="icon-right-arrow-color">
@@ -1025,8 +1034,8 @@
                             <div class="col-lg-6">
                                 <div class="project-content">
                                     <span class="top-title">custom</span>
-                                    <h3>Office Building Exterior Paint Refresh</h3>
-                                    <p>Our commercial painting services are tailored to meet the unique needs of each business, offering durable finishes, minimal disruption to operations, and compliance with safety standards</p>
+                                    <h3 data-i18n="page.index.project_content.h3_1">Office Building Exterior Paint Refresh</h3>
+                                    <p data-i18n="page.index.project_content.p_1">Our commercial painting services are tailored to meet the unique needs of each business, offering durable finishes, minimal disruption to operations, and compliance with safety standards</p>
                                     
                                     <span class="read-more-icon">
                                         <img src="assets/images/icon-right-arrow-color.svg" class="arrow-img" alt="icon-right-arrow-color">
@@ -1045,8 +1054,8 @@
                             <div class="col-lg-6">
                                 <div class="project-content">
                                     <span class="top-title">exterior</span>
-                                    <h3>Bedroom Wall Painting Transformation</h3>
-                                    <p>From bold prints to subtle textures wallpapers offer endless possibilities to reflect your taste and enhance the ambiance of a room aiming for a modern aesthetic a classic look</p>
+                                    <h3 data-i18n="page.index.project_content.h3_2">Bedroom Wall Painting Transformation</h3>
+                                    <p data-i18n="page.index.project_content.p_2">From bold prints to subtle textures wallpapers offer endless possibilities to reflect your taste and enhance the ambiance of a room aiming for a modern aesthetic a classic look</p>
                                     
                                     <span class="read-more-icon">
                                         <img src="assets/images/icon-right-arrow-color.svg" class="arrow-img" alt="icon-right-arrow-color">
@@ -1074,28 +1083,28 @@
                             <i class="ti ti-circle-check-filled fs-22 text-warning"></i>
                             <h1 class="mb-0 lh-1"><span class="counter">28</span>+</h1>
                         </div>
-                        <p>Years Of Experience</p>
+                        <p data-i18n="page.index.content.p_6">Years Of Experience</p>
                     </div>
                     <div class="fun-fact-single-item">
                         <div class="d-flex gap-15">
                             <i class="ti ti-circle-check-filled fs-22 text-warning"></i>
                             <h1 class="mb-0 lh-1"><span class="counter">30</span>k+</h1>
                         </div>
-                        <p>Successfully Finished Project</p>
+                        <p data-i18n="page.index.content.p_7">Successfully Finished Project</p>
                     </div>
                     <div class="fun-fact-single-item">
                         <div class="d-flex gap-15">
                             <i class="ti ti-circle-check-filled fs-22 text-warning"></i>
                             <h1 class="mb-0 lh-1"><span class="counter">98</span>%</h1>
                         </div>
-                        <p>Client Satisfaction</p>
+                        <p data-i18n="page.index.content.p_8">Client Satisfaction</p>
                     </div>
                     <div class="fun-fact-single-item">
                         <div class="d-flex gap-15">
                             <i class="ti ti-circle-check-filled fs-22 text-warning"></i>
                             <h1 class="mb-0 lh-1"><span class="counter">15</span>+</h1>
                         </div>
-                        <p>Good Award Wining</p>
+                        <p data-i18n="page.index.content.p_9">Good Award Wining</p>
                     </div>
                 </div>
             </div>
@@ -1120,7 +1129,7 @@
                             <div class="testimonial-content-wrap">
                                 <div class="mb-30 mt-0">
                                     <span class="top-title">testimonial</span>
-                                    <h2 class="main-title mw-100">What Our Clients Say About Our Painting Company</h2>
+                                    <h2 class="main-title mw-100" data-i18n="page.index.testimonial_content_wrap.h2_0">What Our Clients Say About Our Painting Company</h2>
                                 </div>
 
                                 <div class="swiper testimonial-slide position-relative">
@@ -1135,17 +1144,17 @@
                                                         <i class="ti ti-star-filled fs-20"></i>
                                                         <i class="ti ti-star-filled fs-20"></i>
                                                     </div>
-                                                    <span class="mb-0 fw-medium text-secondary">“Our Home Looks Brand New”</span>
+                                                    <span class="mb-0 fw-medium text-secondary" data-i18n="page.index.testimonial_content_wrap.span_0">“Our Home Looks Brand New”</span>
                                                 </div>
-                                                <p>“The team did an amazing job transforming our home with fresh, vibrant colors. They were punctual, professional, and left everything spotless painting recommend this painting company for anyone looking for quality work! from the initial consultation to the final coat everything choices.”</p>
+                                                <p data-i18n="page.index.testimonial_content_wrap.p_0">“The team did an amazing job transforming our home with fresh, vibrant colors. They were punctual, professional, and left everything spotless painting recommend this painting company for anyone looking for quality work! from the initial consultation to the final coat everything choices.”</p>
 
                                                 <div class="d-flex align-items-center gap-25 info">
                                                     <div class="flex-shrink-0">
                                                         <img src="assets/images/user5.jpg" class="rounded-circle" alt="user">
                                                     </div>
                                                     <div class="flex-grow-1">
-                                                        <h3 class="mb-0">Marquite  Pridgen</h3>
-                                                        <span>Brooklyn, USA</span>
+                                                        <h3 class="mb-0" data-i18n="page.index.testimonial_content_wrap.h3_0">Marquite  Pridgen</h3>
+                                                        <span data-i18n="page.index.testimonial_content_wrap.span_1">Brooklyn, USA</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1160,17 +1169,17 @@
                                                         <i class="ti ti-star-filled fs-20"></i>
                                                         <i class="ti ti-star-filled fs-20"></i>
                                                     </div>
-                                                    <h4 class="mb-0">“Exceeded Our Expectations”</h4>
+                                                    <h4 class="mb-0" data-i18n="page.index.testimonial_content_wrap.h4_0">“Exceeded Our Expectations”</h4>
                                                 </div>
-                                                <p>“From start to finish, the experience was outstanding. The painters were detail-oriented, respectful of our space, and finished earlier than expected. The color consultation helped us choose the perfect tones that completely refreshed our living room. Highly recommend their services!”</p>
+                                                <p data-i18n="page.index.testimonial_content_wrap.p_1">“From start to finish, the experience was outstanding. The painters were detail-oriented, respectful of our space, and finished earlier than expected. The color consultation helped us choose the perfect tones that completely refreshed our living room. Highly recommend their services!”</p>
 
                                                 <div class="d-flex align-items-center gap-25 info">
                                                     <div class="flex-shrink-0">
                                                         <img src="assets/images/user6.jpg" class="rounded-circle" alt="user">
                                                     </div>
                                                     <div class="flex-grow-1">
-                                                        <h3 class="mb-0">Daniela  Simmons</h3>
-                                                        <span>Chicago, USA</span>
+                                                        <h3 class="mb-0" data-i18n="page.index.testimonial_content_wrap.h3_1">Daniela  Simmons</h3>
+                                                        <span data-i18n="page.index.testimonial_content_wrap.span_2">Chicago, USA</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1191,8 +1200,8 @@
         <div class="working-process-area ptb-120">
             <div class="container mw-1690">
                 <div class="text-center mb-40 mt-0" data-cues="slideInUp" data-duration="900">
-                    <span class="top-title">working process</span>
-                    <h2 class="main-title mx-auto mw-100">Our Step By Step Painting Process</h2>
+                    <span class="top-title" data-i18n="page.index.content.span_2">working process</span>
+                    <h2 class="main-title mx-auto mw-100" data-i18n="page.index.content.h2_2">Our Step By Step Painting Process</h2>
                 </div>
 
                 <div class="row g-4" data-cues="slideInUp" data-duration="900">
@@ -1202,8 +1211,8 @@
                                 <img src="assets/images/icon-mouse.svg" alt="icon-mouse">
                                 <span class="count">1</span>
                             </div>
-                            <h3>Get A quote</h3>
-                            <p>Please Contact us use our online form to request a quote</p>
+                            <h3 data-i18n="page.index.content.h3_5">Get A quote</h3>
+                            <p data-i18n="page.index.content.p_10">Please Contact us use our online form to request a quote</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -1212,8 +1221,8 @@
                                 <img src="assets/images/icon-origami.svg" alt="icon-origami">
                                 <span class="count">2</span>
                             </div>
-                            <h3>Schedule A Consultation</h3>
-                            <p>We visit your location to discuss your needs and preferences</p>
+                            <h3 data-i18n="page.index.content.h3_6">Schedule A Consultation</h3>
+                            <p data-i18n="page.index.content.p_11">We visit your location to discuss your needs and preferences</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -1222,8 +1231,8 @@
                                 <img src="assets/images/icon-canvas.svg" alt="icon-canvas">
                                 <span class="count">3</span>
                             </div>
-                            <h3>Painting Process</h3>
-                            <p>Our team starts the painting project ensuring quality and cleanliness</p>
+                            <h3 data-i18n="page.index.content.h3_7">Painting Process</h3>
+                            <p data-i18n="page.index.content.p_12">Our team starts the painting project ensuring quality and cleanliness</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -1232,8 +1241,8 @@
                                 <img src="assets/images/icon-art-book.svg" alt="icon-art-book">
                                 <span class="count">4</span>
                             </div>
-                            <h3>Final Walkthrough</h3>
-                            <p>We review the finished work with you to ensure satisfaction</p>
+                            <h3 data-i18n="page.index.content.h3_8">Final Walkthrough</h3>
+                            <p data-i18n="page.index.content.p_13">We review the finished work with you to ensure satisfaction</p>
                         </div>
                     </div>
                 </div>
@@ -1246,11 +1255,11 @@
             <div class="container mw-1690">
                 <div class="row align-items-center g-4 mb-50" data-cues="slideInUp" data-duration="900">
                     <div class="col-lg-7">
-                        <span class="top-title">meet our team</span>
-                        <h2 class="main-title">The Team Responsible For Paint Projects</h2>
+                        <span class="top-title" data-i18n="page.index.team_area.span_0">meet our team</span>
+                        <h2 class="main-title" data-i18n="page.index.team_area.h2_0">The Team Responsible For Paint Projects</h2>
                     </div>
                     <div class="col-lg-5">
-                        <p>Our commercial painting services are tailored meet the unique needs of each durable finishes minimal disruption to operation and compliance standard</p>
+                        <p data-i18n="page.index.team_area.p_0">Our commercial painting services are tailored meet the unique needs of each durable finishes minimal disruption to operation and compliance standard</p>
                     </div>
                 </div>
 
@@ -1261,8 +1270,8 @@
                                 <div class="nav-link active" id="v-pills-robert-tab" data-bs-toggle="pill" data-bs-target="#v-pills-robert" role="tab" aria-controls="v-pills-robert" aria-selected="true">
                                     <div class="d-flex flex-wrap justify-content-between align-items-center gap-10">
                                         <div>
-                                            <h3>Robert Pineda</h3>
-                                            <span class="designation">Paint Consultant</span>
+                                            <h3 data-i18n="page.index.v_pills_robert_tab.h3_0">Robert Pineda</h3>
+                                            <span class="designation" data-i18n="page.index.v_pills_robert_tab.span_0">Paint Consultant</span>
                                         </div>
                                         
                                         <span class="read-more-icon">
@@ -1274,8 +1283,8 @@
                                 <div class="nav-link" id="v-pills-lori-tab" data-bs-toggle="pill" data-bs-target="#v-pills-lori" role="tab" aria-controls="v-pills-lori" aria-selected="false">
                                     <div class="d-flex flex-wrap justify-content-between align-items-center gap-10">
                                         <div>
-                                            <h3>Lori Sheffield</h3>
-                                            <span class="designation">Detail Painter</span>
+                                            <h3 data-i18n="page.index.v_pills_lori_tab.h3_0">Lori Sheffield</h3>
+                                            <span class="designation" data-i18n="page.index.v_pills_lori_tab.span_0">Detail Painter</span>
                                         </div>
                                         <span class="read-more-icon">
                                             <img src="assets/images/icon-right-arrow-color.svg" class="arrow-img" alt="icon-right-arrow-color">
@@ -1286,8 +1295,8 @@
                                 <div class="nav-link" id="v-pills-david-tab" data-bs-toggle="pill" data-bs-target="#v-pills-david" role="tab" aria-controls="v-pills-david" aria-selected="false">
                                     <div class="d-flex flex-wrap justify-content-between align-items-center gap-10">
                                         <div>
-                                            <h3>David Chadwell</h3>
-                                            <span class="designation">Surface Specialist</span>
+                                            <h3 data-i18n="page.index.v_pills_david_tab.h3_0">David Chadwell</h3>
+                                            <span class="designation" data-i18n="page.index.v_pills_david_tab.span_0">Surface Specialist</span>
                                         </div>
                                         <span class="read-more-icon">
                                             <img src="assets/images/icon-right-arrow-color.svg" class="arrow-img" alt="icon-right-arrow-color">
@@ -1298,8 +1307,8 @@
                                 <div class="nav-link" id="v-pills-miriam-tab" data-bs-toggle="pill" data-bs-target="#v-pills-miriam" role="tab" aria-controls="v-pills-miriam" aria-selected="false">
                                     <div class="d-flex flex-wrap justify-content-between align-items-center gap-10">
                                         <div>
-                                            <h3>Miriam Sherburn</h3>
-                                            <span class="designation">Lead Painter</span>
+                                            <h3 data-i18n="page.index.v_pills_miriam_tab.h3_0">Miriam Sherburn</h3>
+                                            <span class="designation" data-i18n="page.index.v_pills_miriam_tab.span_0">Lead Painter</span>
                                         </div>
                                         <span class="read-more-icon">
                                             <img src="assets/images/icon-right-arrow-color.svg" class="arrow-img" alt="icon-right-arrow-color">
@@ -1332,8 +1341,8 @@
                                         </div>
 
                                         <div class="d-sm-none">
-                                            <h3>Miriam Sherburn</h3>
-                                            <span class="designation">Lead Painter</span>
+                                            <h3 data-i18n="page.index.team_img.h3_0">Miriam Sherburn</h3>
+                                            <span class="designation" data-i18n="page.index.team_img.span_0">Lead Painter</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1359,8 +1368,8 @@
                                         </div>
 
                                         <div class="d-sm-none">
-                                            <h3>Miriam Sherburn</h3>
-                                            <span class="designation">Lead Painter</span>
+                                            <h3 data-i18n="page.index.team_img.h3_1">Miriam Sherburn</h3>
+                                            <span class="designation" data-i18n="page.index.team_img.span_1">Lead Painter</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1386,8 +1395,8 @@
                                         </div>
 
                                         <div class="d-sm-none">
-                                            <h3>Miriam Sherburn</h3>
-                                            <span class="designation">Lead Painter</span>
+                                            <h3 data-i18n="page.index.team_img.h3_2">Miriam Sherburn</h3>
+                                            <span class="designation" data-i18n="page.index.team_img.span_2">Lead Painter</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1413,8 +1422,8 @@
                                         </div>
 
                                         <div class="d-sm-none">
-                                            <h3>Miriam Sherburn</h3>
-                                            <span class="designation">Lead Painter</span>
+                                            <h3 data-i18n="page.index.team_img.h3_3">Miriam Sherburn</h3>
+                                            <span class="designation" data-i18n="page.index.team_img.span_3">Lead Painter</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1430,8 +1439,8 @@
         <div class="blog-area ptb-120 bg-f3eade">
             <div class="container mw-1690">
                 <div class="text-center mb-50" data-cues="slideInUp" data-duration="900">
-                    <span class="top-title">news & blog</span>
-                    <h2 class="main-title mx-auto mw-100">Our Latest Blog From Pentu</h2>
+                    <span class="top-title" data-i18n="page.index.blog_area.span_0">news &amp; blog</span>
+                    <h2 class="main-title mx-auto mw-100" data-i18n="page.index.blog_area.h2_0">Our Latest Blog</h2>
                 </div>
 
                 <div class="row g-4" data-cues="slideInUp" data-duration="900">
@@ -1448,15 +1457,15 @@
                                         <ul class="p-0 list-unstyled d-flex align-items-center gap-35">
                                             <li class="d-flex align-items-center gap-10">
                                                 <i class="ti ti-calendar-week text-primary"></i>
-                                                <span>01 Jun 2025</span>
+                                                <span data-i18n="page.index.blog_content.span_0">01 Jun 2025</span>
                                             </li>
                                             <li class="d-flex align-items-center gap-10">
                                                <i class="ti ti-message-2 text-primary"></i>
-                                                <span>No Comment</span>
+                                                <span data-i18n="page.index.blog_content.span_1">No Comment</span>
                                             </li>
                                         </ul>
-                                        <h3>Top Interior Paint Color Trends of your new home</h3>
-                                        <p>Explore the most popular paint colors this year and how homeowners can use them to refresh their interiors</p>
+                                        <h3 data-i18n="page.index.blog_content.h3_0">Top Interior Paint Color Trends of your new home</h3>
+                                        <p data-i18n="page.index.blog_content.p_0">Explore the most popular paint colors this year and how homeowners can use them to refresh their interiors</p>
                                         <span class="read-more">
                                             Browse More 
                                             <img src="assets/images/icon-right-arrow-black.svg" alt="icon-right-arrow-black">
@@ -1479,15 +1488,15 @@
                                         <ul class="p-0 list-unstyled d-flex align-items-center gap-35">
                                             <li class="d-flex align-items-center gap-10">
                                                 <i class="ti ti-calendar-week text-primary"></i>
-                                                <span>02 Jun 2025</span>
+                                                <span data-i18n="page.index.blog_content.span_3">02 Jun 2025</span>
                                             </li>
                                             <li class="d-flex align-items-center gap-10">
                                                <i class="ti ti-message-2 text-primary"></i>
-                                                <span>01 Comment</span>
+                                                <span data-i18n="page.index.blog_content.span_4">01 Comment</span>
                                             </li>
                                         </ul>
-                                        <h3>How to Choose the Right Paint Finish for Every Room</h3>
-                                        <p>A helpful guide explaining the difference between matte satin semi gloss and gloss finishes and where</p>
+                                        <h3 data-i18n="page.index.blog_content.h3_1">How to Choose the Right Paint Finish for Every Room</h3>
+                                        <p data-i18n="page.index.blog_content.p_1">A helpful guide explaining the difference between matte satin semi gloss and gloss finishes and where</p>
                                         <span class="read-more">
                                             Browse More 
                                             <img src="assets/images/icon-right-arrow-black.svg" alt="icon-right-arrow-black">
@@ -1510,15 +1519,15 @@
                                         <ul class="p-0 list-unstyled d-flex align-items-center gap-35">
                                             <li class="d-flex align-items-center gap-10">
                                                 <i class="ti ti-calendar-week text-primary"></i>
-                                                <span>03 Jun 2025</span>
+                                                <span data-i18n="page.index.blog_content.span_6">03 Jun 2025</span>
                                             </li>
                                             <li class="d-flex align-items-center gap-10">
                                                <i class="ti ti-message-2 text-primary"></i>
-                                                <span>03 Comment</span>
+                                                <span data-i18n="page.index.blog_content.span_7">03 Comment</span>
                                             </li>
                                         </ul>
-                                        <h3>The Benefits of Hiring Professional Painters vs. DIY</h3>
-                                        <p>Break down the pros and cons of DIY painting versus hiring experienced professionals</p>
+                                        <h3 data-i18n="page.index.blog_content.h3_2">The Benefits of Hiring Professional Painters vs. DIY</h3>
+                                        <p data-i18n="page.index.blog_content.p_2">Break down the pros and cons of DIY painting versus hiring experienced professionals</p>
                                         <span class="read-more">
                                             Browse More 
                                             <img src="assets/images/icon-right-arrow-black.svg" alt="icon-right-arrow-black">
@@ -1541,15 +1550,15 @@
                                         <ul class="p-0 list-unstyled d-flex align-items-center gap-35">
                                             <li class="d-flex align-items-center gap-10">
                                                 <i class="ti ti-calendar-week text-primary"></i>
-                                                <span>04 Jun 2025</span>
+                                                <span data-i18n="page.index.blog_content.span_9">04 Jun 2025</span>
                                             </li>
                                             <li class="d-flex align-items-center gap-10">
                                                <i class="ti ti-message-2 text-primary"></i>
-                                                <span>02 Comment</span>
+                                                <span data-i18n="page.index.blog_content.span_10">02 Comment</span>
                                             </li>
                                         </ul>
-                                        <h3>Understanding Color Psychology in Home Painting</h3>
-                                        <p>Explain how different colors can impact mood and atmosphere in various rooms of the home</p>
+                                        <h3 data-i18n="page.index.blog_content.h3_3">Understanding Color Psychology in Home Painting</h3>
+                                        <p data-i18n="page.index.blog_content.p_3">Explain how different colors can impact mood and atmosphere in various rooms of the home</p>
                                         <span class="read-more">
                                             Browse More 
                                             <img src="assets/images/icon-right-arrow-black.svg" alt="icon-right-arrow-black">
@@ -1571,9 +1580,9 @@
                     <div class="col-lg-6">
                         <div class="faq-content">
                             <div class="mb-50 mt-0" data-cues="slideInUp" data-duration="900">
-                                <span class="top-title">Ask a question</span>
-                                <h2 class="main-title">Transforming Spaces With The Stroke Of A Brush</h2>
-                                <p>From walls and ceilings to trims and accents a well executed interior paint job brings new life to any room and reflects your unique style with elegance and precision</p>
+                                <span class="top-title" data-i18n="page.index.faq_content.span_0">Ask a question</span>
+                                <h2 class="main-title" data-i18n="page.index.faq_content.h2_0">Transforming Spaces With The Stroke Of A Brush</h2>
+                                <p data-i18n="page.index.faq_content.p_0">From walls and ceilings to trims and accents a well executed interior paint job brings new life to any room and reflects your unique style with elegance and precision</p>
                             </div>
 
                             <div class="faq-img">
@@ -1586,7 +1595,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h3>Need Help?</h3>
+                                        <h3 data-i18n="page.index.faq_content.h3_0">Need Help?</h3>
                                         <p>Please Call Us: <a href="tel:+971(467)3722870">+971(467) 372 2870</a></p>
                                     </div>
                                 </div>
@@ -1597,85 +1606,85 @@
                         <div class="accordion faq-wrapper" id="accordionExample" data-cues="slideInUp" data-duration="900">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button class="accordion-button text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-i18n="page.index.accordion_header.button_0">
                                         How long does a money transfer take?
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>The right combination of colors textures and techniques walls can reflect wall taste and elevate the overall feel of your space from smooth finishes artistic accents professional wall painting ensures precision and a flawless look</p>
+                                        <p data-i18n="page.index.collapseOne.p_0">The right combination of colors textures and techniques walls can reflect wall taste and elevate the overall feel of your space from smooth finishes artistic accents professional wall painting ensures precision and a flawless look</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button text-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="accordion-button text-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-i18n="page.index.accordion_header.button_1">
                                         How do you help customers choose the right colors?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>I help customers choose the right colors by understanding their preferences, the purpose of the space or product, and the overall mood they want to create. I consider factors like lighting, existing décor, and color psychology, and I often provide samples or visual mock-ups to help them see how different colors will look in real life. My goal is to guide them to a choice that is both aesthetically pleasing and functional.</p>
+                                        <p data-i18n="page.index.collapseTwo.p_0">I help customers choose the right colors by understanding their preferences, the purpose of the space or product, and the overall mood they want to create. I consider factors like lighting, existing décor, and color psychology, and I often provide samples or visual mock-ups to help them see how different colors will look in real life. My goal is to guide them to a choice that is both aesthetically pleasing and functional.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button text-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <button class="accordion-button text-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-i18n="page.index.accordion_header.button_2">
                                         How long will the painting project take?
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>The duration of a painting project depends on the size of the area, the number of coats required, the surface condition, and the type of paint being used. Typically, a small room can take 1–2 days, while larger areas or projects with detailed work may take several days to a week. I always provide a realistic timeline after assessing the space to ensure quality work without unnecessary delays.</p>
+                                        <p data-i18n="page.index.collapseThree.p_0">The duration of a painting project depends on the size of the area, the number of coats required, the surface condition, and the type of paint being used. Typically, a small room can take 1–2 days, while larger areas or projects with detailed work may take several days to a week. I always provide a realistic timeline after assessing the space to ensure quality work without unnecessary delays.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button text-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+                                    <button class="accordion-button text-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4" data-i18n="page.index.accordion_header.button_3">
                                         Do you offer any warranty or guarantee on your work?
                                     </button>
                                 </h2>
                                 <div id="collapseThree4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Yes, we stand by the quality of our work. We offer a [specific time period, e.g., 1-year] warranty/guarantee on our painting services, which covers issues like peeling, cracking, or poor workmanship. Our goal is to ensure that our customers are completely satisfied and confident in the durability and finish of the work we provide.</p>
+                                        <p data-i18n="page.index.collapseThree4.p_0">Yes, we stand by the quality of our work. We offer a [specific time period, e.g., 1-year] warranty/guarantee on our painting services, which covers issues like peeling, cracking, or poor workmanship. Our goal is to ensure that our customers are completely satisfied and confident in the durability and finish of the work we provide.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button text-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+                                    <button class="accordion-button text-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5" data-i18n="page.index.accordion_header.button_4">
                                         How do you prepare surfaces before painting?
                                     </button>
                                 </h2>
                                 <div id="collapseThree5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Before painting, we thoroughly prepare the surfaces to ensure a smooth and long-lasting finish. This includes cleaning the area to remove dust and grease, sanding rough spots, filling cracks or holes with appropriate fillers, and applying a primer if needed. Proper preparation is essential because it helps the paint adhere better and prevents issues like peeling or uneven coverage.</p>
+                                        <p data-i18n="page.index.collapseThree5.p_0">Before painting, we thoroughly prepare the surfaces to ensure a smooth and long-lasting finish. This includes cleaning the area to remove dust and grease, sanding rough spots, filling cracks or holes with appropriate fillers, and applying a primer if needed. Proper preparation is essential because it helps the paint adhere better and prevents issues like peeling or uneven coverage.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button text-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6">
+                                    <button class="accordion-button text-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6" data-i18n="page.index.accordion_header.button_5">
                                         Is your company licensed and insured?
                                     </button>
                                 </h2>
                                 <div id="collapseThree6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Yes, our company is fully licensed and insured. Being licensed ensures that we meet all local regulations and industry standards, and our insurance protects both our team and our customers in the unlikely event of accidents or damage. This allows our clients to have peace of mind knowing the work is done safely and professionally.</p>
+                                        <p data-i18n="page.index.collapseThree6.p_0">Yes, our company is fully licensed and insured. Being licensed ensures that we meet all local regulations and industry standards, and our insurance protects both our team and our customers in the unlikely event of accidents or damage. This allows our clients to have peace of mind knowing the work is done safely and professionally.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button text-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree7" aria-expanded="false" aria-controls="collapseThree7">
+                                    <button class="accordion-button text-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree7" aria-expanded="false" aria-controls="collapseThree7" data-i18n="page.index.accordion_header.button_6">
                                         What safety measures do you take on the job site?
                                     </button>
                                 </h2>
                                 <div id="collapseThree7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Safety is a top priority on every job site. We ensure that all our team members wear appropriate protective gear, such as masks, gloves, and safety goggles. We properly ventilate work areas, use ladders and equipment safely, and follow all industry safety standards. Additionally, we keep the site organized to prevent accidents and ensure a safe environment for both our workers and customers.</p>
+                                        <p data-i18n="page.index.collapseThree7.p_0">Safety is a top priority on every job site. We ensure that all our team members wear appropriate protective gear, such as masks, gloves, and safety goggles. We properly ventilate work areas, use ladders and equipment safely, and follow all industry safety standards. Additionally, we keep the site organized to prevent accidents and ensure a safe environment for both our workers and customers.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1689,51 +1698,51 @@
         <!-- Start Marquee Area -->
         <div class="marquee-wrapper monogram-wrap ptb-120">
             <div class="marquee speed-300">
-                <span class="monogram text-secondary">Quality Painting Excellence</span>
+                <span class="monogram text-secondary" data-i18n="page.index.content.span_3">Quality Painting Excellence</span>
                 <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-                <span class="monogram text-secondary">Certified Painters Guarantee</span>
+                <span class="monogram text-secondary" data-i18n="page.index.content.span_4">Certified Painters Guarantee</span>
                 <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-                <span class="monogram text-secondary">Quality Painting Excellence</span>
+                <span class="monogram text-secondary" data-i18n="page.index.content.span_5">Quality Painting Excellence</span>
                 <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-                <span class="monogram text-secondary">Certified Painters Guarantee</span>
+                <span class="monogram text-secondary" data-i18n="page.index.content.span_6">Certified Painters Guarantee</span>
                 <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-                <span class="monogram text-secondary">Quality Painting Excellence</span>
+                <span class="monogram text-secondary" data-i18n="page.index.content.span_7">Quality Painting Excellence</span>
                 <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-                <span class="monogram text-secondary">Certified Painters Guarantee</span>
+                <span class="monogram text-secondary" data-i18n="page.index.content.span_8">Certified Painters Guarantee</span>
                 <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-                <span class="monogram text-secondary">Quality Painting Excellence</span>
+                <span class="monogram text-secondary" data-i18n="page.index.content.span_9">Quality Painting Excellence</span>
                 <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-                <span class="monogram text-secondary">Certified Painters Guarantee</span>
+                <span class="monogram text-secondary" data-i18n="page.index.content.span_10">Certified Painters Guarantee</span>
                 <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-                <span class="monogram text-secondary">Quality Painting Excellence</span>
+                <span class="monogram text-secondary" data-i18n="page.index.content.span_11">Quality Painting Excellence</span>
                 <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-                <span class="monogram text-secondary">Certified Painters Guarantee</span>
+                <span class="monogram text-secondary" data-i18n="page.index.content.span_12">Certified Painters Guarantee</span>
                 <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-                <span class="monogram text-secondary">Quality Painting Excellence</span>
+                <span class="monogram text-secondary" data-i18n="page.index.content.span_13">Quality Painting Excellence</span>
                 <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-                <span class="monogram text-secondary">Comfort and familiarity</span>
+                <span class="monogram text-secondary" data-i18n="page.index.content.span_14">Comfort and familiarity</span>
             </div>
         </div>
         <!-- End Marquee Area -->
@@ -1746,12 +1755,12 @@
                         <div class="col-lg-6">
                             <div class="subscribe-content">
                                 <span class="top-title">NEWSLETTER</span>
-                                <h2 class="main-title">Subscribe To Our Newsletter</h2>
+                                <h2 class="main-title" data-i18n="page.index.subscribe_content.h2_0">Subscribe To Our Newsletter</h2>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <form class="position-relative z-1 mb-3">
-                                <input type="email" class="form-control" placeholder="Enter Your Email">
+                                <input type="email" class="form-control" placeholder="Enter Your Email" data-i18n-placeholder="footer.email_placeholder">
                                 <button type="submit" class="default-btn position-absolute top-50 end-0 translate-middle-y bg-primary border-0 rounded-2">
                                     <span class="d-flex align-items-center gap-6">
                                         <img src="assets/images/send.svg" alt="send">
@@ -1762,7 +1771,7 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                                 <label class="form-check-label" for="checkDefault">
-                                    I agree to the <a href="terms-conditions.html" class="text-secondary fw-semibold text-decoration-none">Terms & Conditions</a>
+                                    I agree to the <a href="terms-conditions.html" class="text-secondary fw-semibold text-decoration-none" data-i18n="footer.terms_conditions">Terms &amp; Conditions</a>
                                 </label>
                             </div>
                         </div>
@@ -1782,11 +1791,11 @@
                                 <img src="assets/images/white-logo.svg" alt="white-logo">
                             </a>
 
-                            <p class="text-white">Unlike traditional foiling methods digital foiling allows for precise application without the need for dies or plates making it faster more</p>
+                            <p class="text-white" data-i18n="page.index.footer_single_widget.p_0">Unlike traditional foiling methods digital foiling allows for precise application without the need for dies or plates making it faster more</p>
 
                             <ul class="p-0 mb-0 list-unstyled social-link d-flex gap-10 align-items-center">
                                 <li>
-                                    <span class="text-white">Follow Us:</span>
+                                    <span class="text-white" data-i18n="page.index.footer_single_widget.span_0">Follow Us:</span>
                                 </li>
                                 <li>
                                     <a href="https://www.facebook.com/" target="_blank">
@@ -1808,30 +1817,30 @@
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="footer-single-widget ms-xl-5">
-                            <h3>Our Services</h3>
+                            <h3 data-i18n="footer.our_services">Our Services</h3>
 
                             <ul class="import-link p-0 m-0 list-unstyled">
                                 <li>
-                                    <a href="single-service.html">Home Painting</a>
+                                    <a href="single-service.html" data-i18n="page.index.footer_single_widget.a_0">Home Painting</a>
                                 </li> 
                                 <li>
-                                    <a href="single-service.html">Commercial Painting</a>
+                                    <a href="single-service.html" data-i18n="page.index.footer_single_widget.a_1">Commercial Painting</a>
                                 </li>
                                 <li>
-                                    <a href="single-service.html">Interior Painting</a>
+                                    <a href="single-service.html" data-i18n="page.index.footer_single_widget.a_2">Interior Painting</a>
                                 </li>
                                 <li>
-                                    <a href="single-service.html">Exterior Painting</a>
+                                    <a href="single-service.html" data-i18n="page.index.footer_single_widget.a_3">Exterior Painting</a>
                                 </li>
                                 <li>
-                                    <a href="single-service.html">Custom Finishes</a>
+                                    <a href="single-service.html" data-i18n="page.index.footer_single_widget.a_4">Custom Finishes</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="footer-single-widget ms-xl-5">
-                            <h3>Get In Touch</h3>
+                            <h3 data-i18n="footer.get_in_touch">Get In Touch</h3>
 
                             <ul class="p-0 m-0 list-unstyled info-list">
                                 <li class="d-flex">
@@ -1840,7 +1849,7 @@
                                     </div>
                                     <div class="flex-grow-1">
                                         <span class="d-block text-white fw-bold fs-18 mb-1">Location</span>
-                                        <p>70 East 65th Street, New York City</p>
+                                        <p data-i18n="page.index.footer_single_widget.p_1">70 East 65th Street, New York City</p>
                                     </div>
                                 </li>
                                 <li class="d-flex">
@@ -1849,7 +1858,7 @@
                                     </div>
                                     <div class="flex-grow-1">
                                         <span class="d-block text-white fw-bold fs-18 mb-1">Email</span>
-                                        <a href="/cdn-cgi/l/email-protection#a1c9c4cdcdcee1d1c4cfd5d48fc2cecc"><span class="__cf_email__" data-cfemail="d7bfb2bbbbb897a7b2b9a3a2f9b4b8ba">[email&#160;protected]</span></a>
+                                        <a href="/cdn-cgi/l/email-protection#a1c9c4cdcdcee1d1c4cfd5d48fc2cecc"><span class="__cf_email__" data-cfemail="d7bfb2bbbbb897a7b2b9a3a2f9b4b8ba">[email&amp;#160;protected]</span></a>
                                     </div>
                                 </li>
                                 <li class="d-flex">
@@ -1917,11 +1926,11 @@
         <div class="copy-right-area">
             <div class="container mw-1690">
                 <div class="d-flex flex-wrap gap-10 justify-content-center justify-content-lg-between align-items-center">
-                    <p class="mb-0"><span>© Pentu.</span> All Rights Reserved by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                    <p class="mb-0"><span data-i18n="page.index.content.span_15">© Qatar Paint.</span> All Rights Reserved by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
                     
                     <div class="d-flex flex-wrap gap-5 policy">
-                        <a href="privacy-policy.html" class="text-decoration-none">Privacy Policy</a>
-                        <a href="terms-conditions.html" class="text-decoration-none">Terms & Conditions</a>
+                        <a href="privacy-policy.html" class="text-decoration-none" data-i18n="footer.privacy_policy">Privacy Policy</a>
+                        <a href="terms-conditions.html" class="text-decoration-none" data-i18n="footer.terms_conditions">Terms &amp; Conditions</a>
                     </div>
                 </div>
             </div>
@@ -1957,12 +1966,13 @@
         <!-- End RTL & Dark Switch Area -->
      
         <!-- Link Of JS File -->
-        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script><script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer=""></script><script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/swiper-bundle.min.js"></script>
         <script src="assets/js/scrollCue.min.js"></script>
         <script src="assets/js/fslightbox.js"></script>
         <script src="assets/js/ukiyo.min.js"></script>
         <script src="assets/js/lenis.js"></script>
+        <script src="assets/js/i18n.js"></script>
         <script src="assets/js/custom.js"></script>
-    </body>
-</html>
+    
+</body></html>

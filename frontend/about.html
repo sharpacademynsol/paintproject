@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="zxx">
-
-<head>
+<!DOCTYPE html><html lang="zxx"><head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,11 +9,16 @@
     <link rel="stylesheet" href="assets/css/tabler-icons.min.css">
     <link rel="stylesheet" href="assets/css/forma-djr.css">
     <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/rtl-support.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
+		<!-- Google Fonts for Arabic -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <!-- Title -->
-    <title>Qatar Paint - About Us</title>
+    <title data-i18n="page.about.title">Qatar Paint - About Us</title>
 </head>
 
 <body>
@@ -35,21 +37,21 @@
                 <div class="col-xl-6 col-lg-7">
                     <ul class="d-flex flex-wrap justify-content-center justify-content-lg-start flex-md-nowrap align-items-center p-0 m-0 list-unstyled header-info">
                         <li class="d-flex align-items-center gap-6">
-                            <span class="fw-semibold">Location:</span>
-                            <span>Doha, Qatar</span>
+                            <span class="fw-semibold" data-i18n="header.location">Location:</span>
+                            <span data-i18n="header.location_value">Doha, Qatar</span>
                         </li>
                         <li class="d-flex align-items-center gap-6">
-                            <span class="fw-semibold">Email:</span>
-                            <a href="mailto:info@qatarpaint.com" class="text-decoration-none">info@qatarpaint.com</a>
+                            <span class="fw-semibold" data-i18n="header.email">Email:</span>
+                            <a href="mailto:info@qatarpaint.com" class="text-decoration-none" data-i18n="header.email_value">info@qatarpaint.com</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xl-6 col-lg-5">
                     <div class="d-flex justify-content-center justify-content-lg-end align-items-center link-social-wrap">
                         <div class="d-flex link">
-                            <a href="/about.html">About</a>
-                            <a href="/faq">FAQ</a>
-                            <a href="/testimonials">Testimonials</a>
+                            <a href="/about.html" data-i18n="header.about">About</a>
+                            <a href="/faq" data-i18n="header.faq">FAQ</a>
+                            <a href="/testimonials" data-i18n="header.testimonials">Testimonials</a>
                         </div>
 
                         <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
@@ -64,6 +66,12 @@
                                         <i class="ti ti-brand-instagram"></i>
                                     </a>
                             </div>
+
+								<!-- Language Switcher -->
+								<div class="language-switcher">
+									<button class="lang-btn active" data-lang="en" onclick="i18n.switchLanguage('en')">EN</button>
+									<button class="lang-btn" data-lang="ar" onclick="i18n.switchLanguage('ar')">عربي</button>
+								</div>
                         </div>
                     </div>
                 </div>
@@ -85,27 +93,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/">
+                        <a class="nav-link active" href="/" data-i18n="nav.home">
                             Home
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.pages">
                             Pages
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="team.html">
+                                <a class="dropdown-item" href="team.html" data-i18n="nav.team">
                                         Team
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="request-a-quote.html">
+                                <a class="dropdown-item" href="request-a-quote.html" data-i18n="page.about.navbarSupportedContent.a_0">
                                         Request A Quote
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="my-account.html">
+                                <a class="dropdown-item" href="my-account.html" data-i18n="nav.my_account">
                                         My Account
                                     </a>
                             </li>
@@ -116,62 +124,62 @@
 
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="products.html">
+                                        <a class="dropdown-item" href="products.html" data-i18n="nav.products">
                                                 Products
                                             </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="single-product.html">
+                                        <a class="dropdown-item" href="single-product.html" data-i18n="page.about.navbarSupportedContent.a_1">
                                                 Single Product
                                             </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="cart.html">
+                                        <a class="dropdown-item" href="cart.html" data-i18n="nav.cart">
                                                 Cart
                                             </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="checkout.html">
+                                        <a class="dropdown-item" href="checkout.html" data-i18n="nav.checkout">
                                                 Checkout
                                             </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="privacy-policy.html">
+                                <a class="dropdown-item" href="privacy-policy.html" data-i18n="nav.privacy">
                                         Privacy Policy
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="terms-conditions.html">
-                                        Terms & Conditions
+                                <a class="dropdown-item" href="terms-conditions.html" data-i18n="nav.terms">
+                                        Terms &amp; Conditions
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="error-404.html">
+                                <a class="dropdown-item" href="error-404.html" data-i18n="nav.error_404">
                                         Error 404
                                     </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.services">
                                 Services
                             </a>
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="services.html">
+                                <a class="dropdown-item" href="services.html" data-i18n="nav.services">
                                         Services 
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-service.html">
+                                <a class="dropdown-item" href="single-service.html" data-i18n="page.about.navbarSupportedContent.a_2">
                                         Single Service
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="pricing.html">
+                                <a class="dropdown-item" href="pricing.html" data-i18n="nav.pricing">
                                         Pricing
                                     </a>
                             </li>
@@ -189,47 +197,47 @@
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-project.html">
+                                <a class="dropdown-item" href="single-project.html" data-i18n="page.about.navbarSupportedContent.a_3">
                                         Single Project
                                     </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.blog">
                                 Blog
                             </a>
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="blog.html">
+                                <a class="dropdown-item" href="blog.html" data-i18n="nav.blog">
                                         Blog 
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-blog.html">
+                                <a class="dropdown-item" href="single-blog.html" data-i18n="page.about.navbarSupportedContent.a_4">
                                         Single Blog
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="categories.html">
+                                <a class="dropdown-item" href="categories.html" data-i18n="nav.categories">
                                         Categories
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="tags.html">
+                                <a class="dropdown-item" href="tags.html" data-i18n="nav.tags">
                                         Tags
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="author.html">
+                                <a class="dropdown-item" href="author.html" data-i18n="nav.author">
                                         Author
                                     </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="contact-us.html">
+                        <a class="nav-link" href="contact-us.html" data-i18n="nav.contact">
                                 Contact Us
                             </a>
                     </li>
@@ -247,7 +255,7 @@
                 </div>
                 <a href="/quote" class="default-btn d-none d-sm-inline-block">
                     <div class="d-flex align-items-center gap-10">
-                        <span>Get Free Quote</span>
+                        <span data-i18n="page.about.content.span_0">Get Free Quote</span>
                         <img src="assets/images/icon-right-arrow.svg" alt="icon-right-arrow">
                     </div>
                 </a>
@@ -285,7 +293,7 @@
 
                     <ul class="mobile-menu-items">
                         <li>
-                            <a class="dropdown-item" href="index.html">
+                            <a class="dropdown-item" href="index.html" data-i18n="page.about.offcanvasExample.a_0">
                                     Painting Company
                                 </a>
                         </li>
@@ -309,7 +317,7 @@
 
                     <ul class="mobile-menu-items">
                         <li>
-                            <a class="dropdown-item active" href="about-us.html">
+                            <a class="dropdown-item active" href="about-us.html" data-i18n="page.about.offcanvasExample.a_1">
                                     About Us
                                 </a>
                         </li>
@@ -329,12 +337,12 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="request-a-quote.html">
+                            <a class="dropdown-item" href="request-a-quote.html" data-i18n="page.about.offcanvasExample.a_2">
                                     Request A Quote
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="my-account.html">
+                            <a class="dropdown-item" href="my-account.html" data-i18n="page.about.offcanvasExample.a_3">
                                     My Account
                                 </a>
                         </li>
@@ -344,7 +352,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-product.html">
+                            <a class="dropdown-item" href="single-product.html" data-i18n="page.about.offcanvasExample.a_4">
                                     Single Product
                                 </a>
                         </li>
@@ -359,17 +367,17 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="privacy-policy.html">
+                            <a class="dropdown-item" href="privacy-policy.html" data-i18n="footer.privacy_policy">
                                     Privacy Policy
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="terms-conditions.html">
-                                    Terms & Conditions
+                            <a class="dropdown-item" href="terms-conditions.html" data-i18n="footer.terms_conditions">
+                                    Terms &amp; Conditions
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="error-404.html">
+                            <a class="dropdown-item" href="error-404.html" data-i18n="page.about.offcanvasExample.a_5">
                                     Error 404
                                 </a>
                         </li>
@@ -388,7 +396,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-service.html">
+                            <a class="dropdown-item" href="single-service.html" data-i18n="page.about.offcanvasExample.a_6">
                                     Single Service
                                 </a>
                         </li>
@@ -412,7 +420,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-project.html">
+                            <a class="dropdown-item" href="single-project.html" data-i18n="page.about.offcanvasExample.a_7">
                                     Single Project
                                 </a>
                         </li>
@@ -431,7 +439,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-blog.html">
+                            <a class="dropdown-item" href="single-blog.html" data-i18n="page.about.offcanvasExample.a_8">
                                     Single Blog
                                 </a>
                         </li>
@@ -454,7 +462,7 @@
                 </li>
 
                 <li class="mobile-menu-list without-icon border-bottom">
-                    <a href="contact-us.html" class="nav-link">
+                    <a href="contact-us.html" class="nav-link" data-i18n="page.about.offcanvasExample.a_9">
                             Contact Us
                         </a>
                 </li>
@@ -491,12 +499,12 @@
         </div>
         <div class="offcanvas-body">
             <div class="sidebar-single-item">
-                <p>We pride ourselves on attention to detail reliability and a customer-first approach that ensures satisfaction from start to finish from color consultation to coat</p>
+                <p data-i18n="page.about.offcanvasRight.p_0">We pride ourselves on attention to detail reliability and a customer-first approach that ensures satisfaction from start to finish from color consultation to coat</p>
 
                 <div class="newsletter-form">
                     <h3>Newsletter</h3>
                     <form class="position-relative z-1">
-                        <input type="email" class="form-control" placeholder="Enter Your Email">
+                        <input type="email" class="form-control" placeholder="Enter Your Email" data-i18n-placeholder="footer.email_placeholder">
                         <button type="submit" class="submit-btn position-absolute top-50 end-0 translate-middle-y">
                                 <img src="assets/images/send.svg" alt="send">
                             </button>
@@ -505,7 +513,7 @@
             </div>
             <div class="sidebar-single-item">
                 <div class="sidebar-info">
-                    <h3>Contact Info</h3>
+                    <h3 data-i18n="page.about.offcanvasRight.h3_0">Contact Info</h3>
 
                     <ul class="p-0 m-0 list-unstyled info-list">
                         <li class="d-flex">
@@ -514,7 +522,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <span class="fw-semibold d-block text-secondary">Location</span>
-                                <span>Doha, Qatar</span>
+                                <span data-i18n="page.about.offcanvasRight.span_0">Doha, Qatar</span>
                             </div>
                         </li>
                         <li class="d-flex">
@@ -539,7 +547,7 @@
                 </div>
             </div>
             <div class="sidebar-single-item">
-                <h3>Follow Us</h3>
+                <h3 data-i18n="footer.follow_us">Follow Us</h3>
 
                 <ul class="p-0 mb-0 list-unstyled d-flex align-items-center social-link">
                     <li>
@@ -579,7 +587,7 @@
                 <div class="modal-body d-flex justify-content-center align-items-center">
                     <form class="w-100" style="max-width: 500px;">
                         <div class="position-relative">
-                            <input id="searchInput" type="text" class="form-control bg-gray border-0" placeholder="Search">
+                            <input id="searchInput" type="text" class="form-control bg-gray border-0" placeholder="Search" data-i18n-placeholder="common.search">
                             <button class="border-0 bg-primary d-flex justify-content-center align-items-center position-absolute top-50 end-0 translate-middle-y m-2 my-0 rounded-3" type="button" style="width: 40px; height: 40px;">
                                     <i class="ti ti-search text-white"></i>
                                 </button>
@@ -595,11 +603,11 @@
     <div class="page-banner-area bg-img" style="background-image: url(assets/images/page-bg1.jpg);">
         <div class="container">
             <div class="page-banner-content text-center">
-                <h2 class="main-title mx-auto text-white mb-0">About Us</h2>
+                <h2 class="main-title mx-auto text-white mb-0" data-i18n="page.about.page_banner_content.h2_0">About Us</h2>
                 <ul class="d-flex p-0 mb-0 list-unstyled d-flex justify-content-center">
                     <li><a href="/">Home</a></li>
                     <li>
-                        <span>About Us</span>
+                        <span data-i18n="page.about.page_banner_content.span_0">About Us</span>
                     </li>
                 </ul>
             </div>
@@ -619,7 +627,7 @@
                                     <img src="assets/images/get-to-know1.jpg" class="ukiyo object-fit-contain" alt="get-to-know">
 
                                     <div class="get-to-us bg-fff5e9">
-                                        <h3>Company progress</h3>
+                                        <h3 data-i18n="page.about.content.h3_0">Company progress</h3>
 
                                         <div class="mb-3">
                                             <div class="d-flex justify-content-between align-items-center mb-2">
@@ -653,9 +661,9 @@
                 <div class="col-xxl-5">
                     <div class="get-to-know-us-content" data-cues="slideInUp" data-duration="900">
                         <div class="mb-40 mt-0">
-                            <span class="top-title">Get to Know Us</span>
-                            <h2 class="main-title">Transform your space with our skilled full members</h2>
-                            <p>Perfect for business cards invitation packaging and promotional materials digital foiling enhances visual appeal and leaves a lasting impression with its elegant</p>
+                            <span class="top-title" data-i18n="page.about.get_to_know_us_content.span_0">Get to Know Us</span>
+                            <h2 class="main-title" data-i18n="page.about.get_to_know_us_content.h2_0">Transform your space with our skilled full members</h2>
+                            <p data-i18n="page.about.get_to_know_us_content.p_0">Perfect for business cards invitation packaging and promotional materials digital foiling enhances visual appeal and leaves a lasting impression with its elegant</p>
                         </div>
 
                         <div class="row g-4">
@@ -666,8 +674,8 @@
                                         <span class="text-secondary">01</span>
                                     </div>
 
-                                    <h3>Our Mission</h3>
-                                    <p>Our mission is to deliver painting solution that enhance to character of space we touch</p>
+                                    <h3 data-i18n="page.about.get_to_know_us_content.h3_0">Our Mission</h3>
+                                    <p data-i18n="page.about.get_to_know_us_content.p_1">Our mission is to deliver painting solution that enhance to character of space we touch</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -677,8 +685,8 @@
                                         <span class="text-secondary">02</span>
                                     </div>
 
-                                    <h3>Our Vision</h3>
-                                    <p>We aim to inspire and transform through innovative sustainable and dedication to brushstroke</p>
+                                    <h3 data-i18n="page.about.get_to_know_us_content.h3_1">Our Vision</h3>
+                                    <p data-i18n="page.about.get_to_know_us_content.p_2">We aim to inspire and transform through innovative sustainable and dedication to brushstroke</p>
                                 </div>
                             </div>
                         </div>
@@ -696,8 +704,8 @@
                                     <img src="assets/images/user4.jpg" class="rounded-circle" alt="user">
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h3>Sarah Brown</h3>
-                                    <span>CEO & Founder</span>
+                                    <h3 data-i18n="page.about.about_btn.h3_0">Sarah Brown</h3>
+                                    <span data-i18n="page.about.about_btn.span_0">CEO &amp; Founder</span>
                                 </div>
                             </div>
                         </div>
@@ -711,7 +719,7 @@
     <!-- Start Partners Area -->
     <div class="partners-area pb-120">
         <div class="container mw-1690">
-            <span class="partner-title mb-60 text-secondary">SPECIAL THANKS TO ALL OUT PARTNERS</span>
+            <span class="partner-title mb-60 text-secondary" data-i18n="page.about.content.span_1">SPECIAL THANKS TO ALL OUT PARTNERS</span>
 
             <div class="swiper partner-slide text-center">
                 <div class="swiper-wrapper align-items-center">
@@ -761,8 +769,8 @@
     <div class="working-process-area ptb-120 bg-img" style="background-image: url(assets/images/banner-bg.jpg);">
         <div class="container mw-1690">
             <div class="text-center mb-40 mt-0" data-cues="slideInUp" data-duration="900">
-                <span class="top-title">working process</span>
-                <h2 class="main-title mx-auto mw-100">Our Step By Step Painting Process</h2>
+                <span class="top-title" data-i18n="page.about.content.span_2">working process</span>
+                <h2 class="main-title mx-auto mw-100" data-i18n="page.about.content.h2_0">Our Step By Step Painting Process</h2>
             </div>
 
             <div class="row g-4" data-cues="slideInUp" data-duration="900">
@@ -772,8 +780,8 @@
                             <img src="assets/images/icon-mouse.svg" alt="icon-mouse">
                             <span class="count">1</span>
                         </div>
-                        <h3>Get A quote</h3>
-                        <p>Please Contact us use our online form to request a quote</p>
+                        <h3 data-i18n="page.about.content.h3_1">Get A quote</h3>
+                        <p data-i18n="page.about.content.p_0">Please Contact us use our online form to request a quote</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -782,8 +790,8 @@
                             <img src="assets/images/icon-origami.svg" alt="icon-origami">
                             <span class="count">2</span>
                         </div>
-                        <h3>Schedule A Consultation</h3>
-                        <p>We visit your location to discuss your needs and preferences</p>
+                        <h3 data-i18n="page.about.content.h3_2">Schedule A Consultation</h3>
+                        <p data-i18n="page.about.content.p_1">We visit your location to discuss your needs and preferences</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -792,8 +800,8 @@
                             <img src="assets/images/icon-canvas.svg" alt="icon-canvas">
                             <span class="count">3</span>
                         </div>
-                        <h3>Painting Process</h3>
-                        <p>Our team starts the painting project ensuring quality and cleanliness</p>
+                        <h3 data-i18n="page.about.content.h3_3">Painting Process</h3>
+                        <p data-i18n="page.about.content.p_2">Our team starts the painting project ensuring quality and cleanliness</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -802,8 +810,8 @@
                             <img src="assets/images/icon-art-book.svg" alt="icon-art-book">
                             <span class="count">4</span>
                         </div>
-                        <h3>Final Walkthrough</h3>
-                        <p>We review the finished work with you to ensure satisfaction</p>
+                        <h3 data-i18n="page.about.content.h3_4">Final Walkthrough</h3>
+                        <p data-i18n="page.about.content.p_3">We review the finished work with you to ensure satisfaction</p>
                     </div>
                 </div>
             </div>
@@ -815,8 +823,8 @@
     <div class="why-choose-us-area ptb-120">
         <div class="container mw-1690">
             <div class="mb-50 mt-0 text-center">
-                <span class="top-title">why choose us</span>
-                <h2 class="main-title mx-auto mw-550">Why Choose Pentu For Your Remodeling Services</h2>
+                <span class="top-title" data-i18n="page.about.content.span_3">why choose us</span>
+                <h2 class="main-title mx-auto mw-550" data-i18n="page.about.content.h2_1">Why Choose Qatar Paint For Your Painting Services</h2>
             </div>
 
             <div class="row g-4 align-items-center">
@@ -827,10 +835,10 @@
                                 <img src="assets/images/icon-why-choose-us1.svg" alt="icon-why-choose-us">
                             </div>
                             <div class="flex-grow-1">
-                                <h3 class="mb-0">Residential Renovation</h3>
+                                <h3 class="mb-0" data-i18n="page.about.why_choose_us_content_item.h3_0">Residential Renovation</h3>
                             </div>
                         </div>
-                        <p>Residential renovation is transformative process that breathes new life into home enhancing both its functionality and aesthetic appeal single room</p>
+                        <p data-i18n="page.about.why_choose_us_content_item.p_0">Residential renovation is transformative process that breathes new life into home enhancing both its functionality and aesthetic appeal single room</p>
                     </div>
                     <div class="why-choose-us-content-item">
                         <div class="d-flex align-items-center mb-30 mt-0 gap-30">
@@ -838,10 +846,10 @@
                                 <img src="assets/images/icon-why-choose-us2.svg" alt="icon-why-choose-us">
                             </div>
                             <div class="flex-grow-1">
-                                <h3 class="mb-0">Design & Planning</h3>
+                                <h3 class="mb-0" data-i18n="page.about.why_choose_us_content_item.h3_1">Design &amp; Planning</h3>
                             </div>
                         </div>
-                        <p>Design & Planning is the foundation of any successful renovation or construction project It involves turning ideas into practical well structured solutions</p>
+                        <p data-i18n="page.about.why_choose_us_content_item.p_1">Design &amp; Planning is the foundation of any successful renovation or construction project It involves turning ideas into practical well structured solutions</p>
                     </div>
                     <div class="why-choose-us-content-item">
                         <div class="d-flex align-items-center mb-30 mt-0 gap-30">
@@ -849,10 +857,10 @@
                                 <img src="assets/images/icon-why-choose-us3.svg" alt="icon-why-choose-us">
                             </div>
                             <div class="flex-grow-1">
-                                <h3 class="mb-0">Turnkey Renovation</h3>
+                                <h3 class="mb-0" data-i18n="page.about.why_choose_us_content_item.h3_2">Turnkey Renovation</h3>
                             </div>
                         </div>
-                        <p>Turnkey renovation offers a complete hassle free solution for transforming space from start to finish from initial design and planning to final execution</p>
+                        <p data-i18n="page.about.why_choose_us_content_item.p_2">Turnkey renovation offers a complete hassle free solution for transforming space from start to finish from initial design and planning to final execution</p>
                     </div>
                 </div>
                 <div class="col-xl-6">
@@ -866,7 +874,7 @@
 
                                     <div class="progress-wrap">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span class="text-secondary fs-18">Professional Workers</span>
+                                            <span class="text-secondary fs-18" data-i18n="page.about.content.span_4">Professional Workers</span>
                                             <span class="text-secondary fs-18">90%</span>
                                         </div>
 
@@ -880,7 +888,7 @@
                                 <div class="why-choose-us-img">
                                     <div class="progress-wrap mb-30">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span class="text-secondary fs-18">Paint Spraying</span>
+                                            <span class="text-secondary fs-18" data-i18n="page.about.content.span_5">Paint Spraying</span>
                                             <span class="text-secondary fs-18">80%</span>
                                         </div>
 
@@ -918,7 +926,7 @@
                         <div class="testimonial-content-wrap">
                             <div class="mb-30 mt-0">
                                 <span class="top-title">testimonial</span>
-                                <h2 class="main-title mw-100">What Our Clients Say About Our Painting Company</h2>
+                                <h2 class="main-title mw-100" data-i18n="page.about.testimonial_content_wrap.h2_0">What Our Clients Say About Our Painting Company</h2>
                             </div>
 
                             <div class="swiper testimonial-slide position-relative">
@@ -933,9 +941,9 @@
                                                     <i class="ti ti-star-filled fs-20"></i>
                                                     <i class="ti ti-star-filled fs-20"></i>
                                                 </div>
-                                                <span class="mb-0 fw-medium text-secondary">“Our Home Looks Brand New”</span>
+                                                <span class="mb-0 fw-medium text-secondary" data-i18n="page.about.testimonial_content_wrap.span_0">“Our Home Looks Brand New”</span>
                                             </div>
-                                            <p>“The team did an amazing job transforming our home with fresh, vibrant colors. They were punctual, professional, and left everything spotless painting recommend this painting company for anyone looking for quality
+                                            <p data-i18n="page.about.testimonial_content_wrap.p_0">“The team did an amazing job transforming our home with fresh, vibrant colors. They were punctual, professional, and left everything spotless painting recommend this painting company for anyone looking for quality
                                                 work! from the initial consultation to the final coat everything choices.”</p>
 
                                             <div class="d-flex align-items-center gap-25 info">
@@ -943,8 +951,8 @@
                                                     <img src="assets/images/user5.jpg" class="rounded-circle" alt="user">
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <h3 class="mb-0">Marquite Pridgen</h3>
-                                                    <span>Brooklyn, USA</span>
+                                                    <h3 class="mb-0" data-i18n="page.about.testimonial_content_wrap.h3_0">Marquite Pridgen</h3>
+                                                    <span data-i18n="page.about.testimonial_content_wrap.span_1">Brooklyn, USA</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -959,9 +967,9 @@
                                                     <i class="ti ti-star-filled fs-20"></i>
                                                     <i class="ti ti-star-filled fs-20"></i>
                                                 </div>
-                                                <h4 class="mb-0">“Exceeded Our Expectations”</h4>
+                                                <h4 class="mb-0" data-i18n="page.about.testimonial_content_wrap.h4_0">“Exceeded Our Expectations”</h4>
                                             </div>
-                                            <p>“From start to finish, the experience was outstanding. The painters were detail-oriented, respectful of our space, and finished earlier than expected. The color consultation helped us choose the perfect tones
+                                            <p data-i18n="page.about.testimonial_content_wrap.p_1">“From start to finish, the experience was outstanding. The painters were detail-oriented, respectful of our space, and finished earlier than expected. The color consultation helped us choose the perfect tones
                                                 that completely refreshed our living room. Highly recommend their services!”</p>
 
                                             <div class="d-flex align-items-center gap-25 info">
@@ -969,8 +977,8 @@
                                                     <img src="assets/images/user6.jpg" class="rounded-circle" alt="user">
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <h3 class="mb-0">Daniela Simmons</h3>
-                                                    <span>Chicago, USA</span>
+                                                    <h3 class="mb-0" data-i18n="page.about.testimonial_content_wrap.h3_1">Daniela Simmons</h3>
+                                                    <span data-i18n="page.about.testimonial_content_wrap.span_2">Chicago, USA</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -991,8 +999,8 @@
     <div class="team-area pt-120">
         <div class="container mw-1690">
             <div class="mb-50 mt-0 text-center">
-                <span class="top-title">Team Members</span>
-                <h2 class="main-title mx-auto mw-550">The Team Responsible For Remodeling Projects</h2>
+                <span class="top-title" data-i18n="page.about.team_area.span_0">Team Members</span>
+                <h2 class="main-title mx-auto mw-550" data-i18n="page.about.team_area.h2_0">The Team Responsible For Remodeling Projects</h2>
             </div>
 
             <div class="swiper team-slide">
@@ -1002,8 +1010,8 @@
                             <img src="assets/images/team5.jpg" alt="team">
 
                             <div class="team-content">
-                                <h3>Robert Pineda</h3>
-                                <span>Paint Consultant</span>
+                                <h3 data-i18n="page.about.team_content.h3_0">Robert Pineda</h3>
+                                <span data-i18n="page.about.team_content.span_0">Paint Consultant</span>
                             </div>
                             <ul class="p-0 list-unstyled social-link">
                                 <li>
@@ -1034,8 +1042,8 @@
                             <img src="assets/images/team6.jpg" alt="team">
 
                             <div class="team-content">
-                                <h3>Lori Sheffield</h3>
-                                <span>Detail Painter</span>
+                                <h3 data-i18n="page.about.team_content.h3_1">Lori Sheffield</h3>
+                                <span data-i18n="page.about.team_content.span_1">Detail Painter</span>
                             </div>
                             <ul class="p-0 list-unstyled social-link">
                                 <li>
@@ -1066,8 +1074,8 @@
                             <img src="assets/images/team7.jpg" alt="team">
 
                             <div class="team-content">
-                                <h3>David Chadwell</h3>
-                                <span>Surface Specialist</span>
+                                <h3 data-i18n="page.about.team_content.h3_2">David Chadwell</h3>
+                                <span data-i18n="page.about.team_content.span_2">Surface Specialist</span>
                             </div>
                             <ul class="p-0 list-unstyled social-link">
                                 <li>
@@ -1098,8 +1106,8 @@
                             <img src="assets/images/team8.jpg" alt="team">
 
                             <div class="team-content">
-                                <h3>Miriam Sherburn</h3>
-                                <span>Lead Painter</span>
+                                <h3 data-i18n="page.about.team_content.h3_3">Miriam Sherburn</h3>
+                                <span data-i18n="page.about.team_content.span_3">Lead Painter</span>
                             </div>
                             <ul class="p-0 list-unstyled social-link">
                                 <li>
@@ -1130,8 +1138,8 @@
                             <img src="assets/images/team5.jpg" alt="team">
 
                             <div class="team-content">
-                                <h3>Robert Pineda</h3>
-                                <span>Paint Consultant</span>
+                                <h3 data-i18n="page.about.team_content.h3_4">Robert Pineda</h3>
+                                <span data-i18n="page.about.team_content.span_4">Paint Consultant</span>
                             </div>
                             <ul class="p-0 list-unstyled social-link">
                                 <li>
@@ -1162,8 +1170,8 @@
                             <img src="assets/images/team6.jpg" alt="team">
 
                             <div class="team-content">
-                                <h3>Lori Sheffield</h3>
-                                <span>Detail Painter</span>
+                                <h3 data-i18n="page.about.team_content.h3_5">Lori Sheffield</h3>
+                                <span data-i18n="page.about.team_content.span_5">Detail Painter</span>
                             </div>
                             <ul class="p-0 list-unstyled social-link">
                                 <li>
@@ -1194,8 +1202,8 @@
                             <img src="assets/images/team7.jpg" alt="team">
 
                             <div class="team-content">
-                                <h3>David Chadwell</h3>
-                                <span>Surface Specialist</span>
+                                <h3 data-i18n="page.about.team_content.h3_6">David Chadwell</h3>
+                                <span data-i18n="page.about.team_content.span_6">Surface Specialist</span>
                             </div>
                             <ul class="p-0 list-unstyled social-link">
                                 <li>
@@ -1226,8 +1234,8 @@
                             <img src="assets/images/team8.jpg" alt="team">
 
                             <div class="team-content">
-                                <h3>Miriam Sherburn</h3>
-                                <span>Lead Painter</span>
+                                <h3 data-i18n="page.about.team_content.h3_7">Miriam Sherburn</h3>
+                                <span data-i18n="page.about.team_content.span_7">Lead Painter</span>
                             </div>
                             <ul class="p-0 list-unstyled social-link">
                                 <li>
@@ -1264,51 +1272,51 @@
     <!-- Start Marquee Area -->
     <div class="marquee-wrapper monogram-wrap ptb-120">
         <div class="marquee speed-300">
-            <span class="monogram text-secondary">Quality Painting Excellence</span>
+            <span class="monogram text-secondary" data-i18n="page.about.content.span_6">Quality Painting Excellence</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Certified Painters Guarantee</span>
+            <span class="monogram text-secondary" data-i18n="page.about.content.span_7">Certified Painters Guarantee</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Quality Painting Excellence</span>
+            <span class="monogram text-secondary" data-i18n="page.about.content.span_8">Quality Painting Excellence</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Certified Painters Guarantee</span>
+            <span class="monogram text-secondary" data-i18n="page.about.content.span_9">Certified Painters Guarantee</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Quality Painting Excellence</span>
+            <span class="monogram text-secondary" data-i18n="page.about.content.span_10">Quality Painting Excellence</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Certified Painters Guarantee</span>
+            <span class="monogram text-secondary" data-i18n="page.about.content.span_11">Certified Painters Guarantee</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Quality Painting Excellence</span>
+            <span class="monogram text-secondary" data-i18n="page.about.content.span_12">Quality Painting Excellence</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Certified Painters Guarantee</span>
+            <span class="monogram text-secondary" data-i18n="page.about.content.span_13">Certified Painters Guarantee</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Quality Painting Excellence</span>
+            <span class="monogram text-secondary" data-i18n="page.about.content.span_14">Quality Painting Excellence</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Certified Painters Guarantee</span>
+            <span class="monogram text-secondary" data-i18n="page.about.content.span_15">Certified Painters Guarantee</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Quality Painting Excellence</span>
+            <span class="monogram text-secondary" data-i18n="page.about.content.span_16">Quality Painting Excellence</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Comfort and familiarity</span>
+            <span class="monogram text-secondary" data-i18n="page.about.content.span_17">Comfort and familiarity</span>
         </div>
     </div>
     <!-- End Marquee Area -->
@@ -1321,12 +1329,12 @@
                     <div class="col-lg-6">
                         <div class="subscribe-content">
                             <span class="top-title">NEWSLETTER</span>
-                            <h2 class="main-title">Subscribe To Our Newsletter</h2>
+                            <h2 class="main-title" data-i18n="page.about.subscribe_content.h2_0">Subscribe To Our Newsletter</h2>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <form class="position-relative z-1 mb-3">
-                            <input type="email" class="form-control" placeholder="Enter Your Email">
+                            <input type="email" class="form-control" placeholder="Enter Your Email" data-i18n-placeholder="footer.email_placeholder">
                             <button type="submit" class="default-btn position-absolute top-50 end-0 translate-middle-y bg-primary border-0 rounded-2">
                                     <span class="d-flex align-items-center gap-6">
                                         <img src="assets/images/send.svg" alt="send">
@@ -1337,7 +1345,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                             <label class="form-check-label" for="checkDefault">
-                                    I agree to the <a href="terms-conditions.html" class="text-secondary fw-semibold text-decoration-none">Terms & Conditions</a>
+                                    I agree to the <a href="terms-conditions.html" class="text-secondary fw-semibold text-decoration-none" data-i18n="footer.terms_conditions">Terms &amp; Conditions</a>
                                 </label>
                         </div>
                     </div>
@@ -1357,11 +1365,11 @@
                                 <img src="assets/images/white-logo.svg" alt="white-logo">
                             </a>
 
-                        <p class="text-white">Unlike traditional foiling methods digital foiling allows for precise application without the need for dies or plates making it faster more</p>
+                        <p class="text-white" data-i18n="page.about.footer_single_widget.p_0">Unlike traditional foiling methods digital foiling allows for precise application without the need for dies or plates making it faster more</p>
 
                         <ul class="p-0 mb-0 list-unstyled social-link d-flex gap-10 align-items-center">
                             <li>
-                                <span class="text-white">Follow Us:</span>
+                                <span class="text-white" data-i18n="page.about.footer_single_widget.span_0">Follow Us:</span>
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/" target="_blank">
@@ -1383,30 +1391,30 @@
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-single-widget ms-xl-5">
-                        <h3>Our Services</h3>
+                        <h3 data-i18n="footer.our_services">Our Services</h3>
 
                         <ul class="import-link p-0 m-0 list-unstyled">
                             <li>
-                                <a href="single-service.html">Home Painting</a>
+                                <a href="single-service.html" data-i18n="page.about.footer_single_widget.a_0">Home Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Commercial Painting</a>
+                                <a href="single-service.html" data-i18n="page.about.footer_single_widget.a_1">Commercial Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Interior Painting</a>
+                                <a href="single-service.html" data-i18n="page.about.footer_single_widget.a_2">Interior Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Exterior Painting</a>
+                                <a href="single-service.html" data-i18n="page.about.footer_single_widget.a_3">Exterior Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Custom Finishes</a>
+                                <a href="single-service.html" data-i18n="page.about.footer_single_widget.a_4">Custom Finishes</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-single-widget ms-xl-5">
-                        <h3>Get In Touch</h3>
+                        <h3 data-i18n="footer.get_in_touch">Get In Touch</h3>
 
                         <ul class="p-0 m-0 list-unstyled info-list">
                             <li class="d-flex">
@@ -1415,7 +1423,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <span class="d-block text-white fw-bold fs-18 mb-1">Location</span>
-                                    <p>70 East 65th Street, New York City</p>
+                                    <p data-i18n="page.about.footer_single_widget.p_1">70 East 65th Street, New York City</p>
                                 </div>
                             </li>
                             <li class="d-flex">
@@ -1424,7 +1432,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <span class="d-block text-white fw-bold fs-18 mb-1">Email</span>
-                                    <a href="/cdn-cgi/l/email-protection#c7afa2ababa887b7a2a9b3b2e9a4a8aa"><span class="__cf_email__" data-cfemail="2d45484141426d5d48435958034e4240">[email&#160;protected]</span></a>
+                                    <a href="/cdn-cgi/l/email-protection#c7afa2ababa887b7a2a9b3b2e9a4a8aa"><span class="__cf_email__" data-cfemail="2d45484141426d5d48435958034e4240">[email&amp;#160;protected]</span></a>
                                 </div>
                             </li>
                             <li class="d-flex">
@@ -1492,11 +1500,11 @@
     <div class="copy-right-area">
         <div class="container mw-1690">
             <div class="d-flex flex-wrap gap-10 justify-content-center justify-content-lg-between align-items-center">
-                <p class="mb-0"><span>© Pentu.</span> All Rights Reserved by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                <p class="mb-0"><span data-i18n="page.about.content.span_18">© Qatar Paint.</span> All Rights Reserved by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
 
                 <div class="d-flex flex-wrap gap-5 policy">
-                    <a href="privacy-policy.html" class="text-decoration-none">Privacy Policy</a>
-                    <a href="terms-conditions.html" class="text-decoration-none">Terms & Conditions</a>
+                    <a href="privacy-policy.html" class="text-decoration-none" data-i18n="footer.privacy_policy">Privacy Policy</a>
+                    <a href="terms-conditions.html" class="text-decoration-none" data-i18n="footer.terms_conditions">Terms &amp; Conditions</a>
                 </div>
             </div>
         </div>
@@ -1532,14 +1540,15 @@
     <!-- End RTL & Dark Switch Area -->
 
     <!-- Link Of JS File -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer=""></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/scrollCue.min.js"></script>
     <script src="assets/js/fslightbox.js"></script>
     <script src="assets/js/ukiyo.min.js"></script>
     <script src="assets/js/lenis.js"></script>
-    <script src="assets/js/custom.js"></script>
-</body>
+    
+		<script src="assets/js/i18n.js"></script><script src="assets/js/custom.js"></script>
 
-</html>
+
+</body></html>

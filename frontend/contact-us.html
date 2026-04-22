@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="zxx">
-
-<head>
+<!DOCTYPE html><html lang="zxx"><head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,11 +9,16 @@
     <link rel="stylesheet" href="assets/css/tabler-icons.min.css">
     <link rel="stylesheet" href="assets/css/forma-djr.css">
     <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/rtl-support.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
+		<!-- Google Fonts for Arabic -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <!-- Title -->
-    <title>Pentu - Painting, Building & Renovation HTML Template</title>
+    <title data-i18n="page.contact_us.title">Qatar Paint - Professional Painting Services</title>
 </head>
 
 <body>
@@ -35,21 +37,21 @@
                 <div class="col-xl-6 col-lg-7">
                     <ul class="d-flex flex-wrap justify-content-center justify-content-lg-start flex-md-nowrap align-items-center p-0 m-0 list-unstyled header-info">
                         <li class="d-flex align-items-center gap-6">
-                            <span class="fw-semibold">Location:</span>
-                            <span>70 East 65th Street, New York City</span>
+                            <span class="fw-semibold" data-i18n="header.location">Location:</span>
+                            <span data-i18n="header.location_value">70 East 65th Street, New York City</span>
                         </li>
                         <li class="d-flex align-items-center gap-6">
-                            <span class="fw-semibold">Email:</span>
-                            <a href="/cdn-cgi/l/email-protection#f49c9198989bb484919a8081da979b99" class="text-decoration-none"><span class="__cf_email__" data-cfemail="a0c8c5cccccfe0d0c5ced4d58ec3cfcd">[email&#160;protected]</span></a>
+                            <span class="fw-semibold" data-i18n="header.email">Email:</span>
+                            <a href="/cdn-cgi/l/email-protection#f49c9198989bb484919a8081da979b99" class="text-decoration-none"><span class="__cf_email__" data-cfemail="a0c8c5cccccfe0d0c5ced4d58ec3cfcd">[email&amp;#160;protected]</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xl-6 col-lg-5">
                     <div class="d-flex justify-content-center justify-content-lg-end align-items-center link-social-wrap">
                         <div class="d-flex link">
-                            <a href="about-us.html">About</a>
-                            <a href="faqs.html">FAQ</a>
-                            <a href="testimonials.html">Testimonials</a>
+                            <a href="about-us.html" data-i18n="header.about">About</a>
+                            <a href="faqs.html" data-i18n="header.faq">FAQ</a>
+                            <a href="testimonials.html" data-i18n="header.testimonials">Testimonials</a>
                         </div>
 
                         <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
@@ -64,6 +66,12 @@
                                         <i class="ti ti-brand-instagram"></i>
                                     </a>
                             </div>
+
+								<!-- Language Switcher -->
+								<div class="language-switcher">
+									<button class="lang-btn active" data-lang="en" onclick="i18n.switchLanguage('en')">EN</button>
+									<button class="lang-btn" data-lang="ar" onclick="i18n.switchLanguage('ar')">عربي</button>
+								</div>
                         </div>
                     </div>
                 </div>
@@ -85,28 +93,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link active" href="/">
+                        <a class="nav-link active" href="/" data-i18n="nav.home">
                             Home
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.pages">
                                 Pages
                             </a>
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="team.html">
+                                <a class="dropdown-item" href="team.html" data-i18n="nav.team">
                                         Team
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="request-a-quote.html">
+                                <a class="dropdown-item" href="request-a-quote.html" data-i18n="page.contact_us.navbarSupportedContent.a_0">
                                         Request A Quote
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="my-account.html">
+                                <a class="dropdown-item" href="my-account.html" data-i18n="nav.my_account">
                                         My Account
                                     </a>
                             </li>
@@ -117,62 +125,62 @@
 
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="products.html">
+                                        <a class="dropdown-item" href="products.html" data-i18n="nav.products">
                                                 Products
                                             </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="single-product.html">
+                                        <a class="dropdown-item" href="single-product.html" data-i18n="page.contact_us.navbarSupportedContent.a_1">
                                                 Single Product
                                             </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="cart.html">
+                                        <a class="dropdown-item" href="cart.html" data-i18n="nav.cart">
                                                 Cart
                                             </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="checkout.html">
+                                        <a class="dropdown-item" href="checkout.html" data-i18n="nav.checkout">
                                                 Checkout
                                             </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="privacy-policy.html">
+                                <a class="dropdown-item" href="privacy-policy.html" data-i18n="nav.privacy">
                                         Privacy Policy
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="terms-conditions.html">
-                                        Terms & Conditions
+                                <a class="dropdown-item" href="terms-conditions.html" data-i18n="nav.terms">
+                                        Terms &amp; Conditions
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="error-404.html">
+                                <a class="dropdown-item" href="error-404.html" data-i18n="nav.error_404">
                                         Error 404
                                     </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.services">
                                 Services
                             </a>
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="services.html">
+                                <a class="dropdown-item" href="services.html" data-i18n="nav.services">
                                         Services 
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-service.html">
+                                <a class="dropdown-item" href="single-service.html" data-i18n="page.contact_us.navbarSupportedContent.a_2">
                                         Single Service
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="pricing.html">
+                                <a class="dropdown-item" href="pricing.html" data-i18n="nav.pricing">
                                         Pricing
                                     </a>
                             </li>
@@ -190,47 +198,47 @@
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-project.html">
+                                <a class="dropdown-item" href="single-project.html" data-i18n="page.contact_us.navbarSupportedContent.a_3">
                                         Single Project
                                     </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.blog">
                                 Blog
                             </a>
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="blog.html">
+                                <a class="dropdown-item" href="blog.html" data-i18n="nav.blog">
                                         Blog 
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-blog.html">
+                                <a class="dropdown-item" href="single-blog.html" data-i18n="page.contact_us.navbarSupportedContent.a_4">
                                         Single Blog
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="categories.html">
+                                <a class="dropdown-item" href="categories.html" data-i18n="nav.categories">
                                         Categories
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="tags.html">
+                                <a class="dropdown-item" href="tags.html" data-i18n="nav.tags">
                                         Tags
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="author.html">
+                                <a class="dropdown-item" href="author.html" data-i18n="nav.author">
                                         Author
                                     </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link active" href="contact-us.html">
+                        <a class="nav-link active" href="contact-us.html" data-i18n="nav.contact">
                                 Contact Us
                             </a>
                     </li>
@@ -248,7 +256,7 @@
                 </div>
                 <a href="contact-us.html" class="default-btn d-none d-sm-inline-block">
                     <div class="d-flex align-items-center gap-10">
-                        <span>Get Free Quote</span>
+                        <span data-i18n="page.contact_us.content.span_0">Get Free Quote</span>
                         <img src="assets/images/icon-right-arrow.svg" alt="icon-right-arrow">
                     </div>
                 </a>
@@ -286,7 +294,7 @@
 
                     <ul class="mobile-menu-items">
                         <li>
-                            <a class="dropdown-item" href="index.html">
+                            <a class="dropdown-item" href="index.html" data-i18n="page.contact_us.offcanvasExample.a_0">
                                     Painting Company
                                 </a>
                         </li>
@@ -310,7 +318,7 @@
 
                     <ul class="mobile-menu-items">
                         <li>
-                            <a class="dropdown-item" href="about-us.html">
+                            <a class="dropdown-item" href="about-us.html" data-i18n="page.contact_us.offcanvasExample.a_1">
                                     About Us
                                 </a>
                         </li>
@@ -330,12 +338,12 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="request-a-quote.html">
+                            <a class="dropdown-item" href="request-a-quote.html" data-i18n="page.contact_us.offcanvasExample.a_2">
                                     Request A Quote
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="my-account.html">
+                            <a class="dropdown-item" href="my-account.html" data-i18n="page.contact_us.offcanvasExample.a_3">
                                     My Account
                                 </a>
                         </li>
@@ -345,7 +353,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-product.html">
+                            <a class="dropdown-item" href="single-product.html" data-i18n="page.contact_us.offcanvasExample.a_4">
                                     Single Product
                                 </a>
                         </li>
@@ -360,17 +368,17 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="privacy-policy.html">
+                            <a class="dropdown-item" href="privacy-policy.html" data-i18n="footer.privacy_policy">
                                     Privacy Policy
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="terms-conditions.html">
-                                    Terms & Conditions
+                            <a class="dropdown-item" href="terms-conditions.html" data-i18n="footer.terms_conditions">
+                                    Terms &amp; Conditions
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="error-404.html">
+                            <a class="dropdown-item" href="error-404.html" data-i18n="page.contact_us.offcanvasExample.a_5">
                                     Error 404
                                 </a>
                         </li>
@@ -389,7 +397,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-service.html">
+                            <a class="dropdown-item" href="single-service.html" data-i18n="page.contact_us.offcanvasExample.a_6">
                                     Single Service
                                 </a>
                         </li>
@@ -413,7 +421,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-project.html">
+                            <a class="dropdown-item" href="single-project.html" data-i18n="page.contact_us.offcanvasExample.a_7">
                                     Single Project
                                 </a>
                         </li>
@@ -432,7 +440,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-blog.html">
+                            <a class="dropdown-item" href="single-blog.html" data-i18n="page.contact_us.offcanvasExample.a_8">
                                     Single Blog
                                 </a>
                         </li>
@@ -455,7 +463,7 @@
                 </li>
 
                 <li class="mobile-menu-list without-icon border-bottom">
-                    <a href="contact-us.html" class="nav-link active">
+                    <a href="contact-us.html" class="nav-link active" data-i18n="page.contact_us.offcanvasExample.a_9">
                             Contact Us
                         </a>
                 </li>
@@ -492,12 +500,12 @@
         </div>
         <div class="offcanvas-body">
             <div class="sidebar-single-item">
-                <p>We pride ourselves on attention to detail reliability and a customer-first approach that ensures satisfaction from start to finish from color consultation to coat</p>
+                <p data-i18n="page.contact_us.offcanvasRight.p_0">We pride ourselves on attention to detail reliability and a customer-first approach that ensures satisfaction from start to finish from color consultation to coat</p>
 
                 <div class="newsletter-form">
                     <h3>Newsletter</h3>
                     <form class="position-relative z-1">
-                        <input type="email" class="form-control" placeholder="Enter Your Email">
+                        <input type="email" class="form-control" placeholder="Enter Your Email" data-i18n-placeholder="footer.email_placeholder">
                         <button type="submit" class="submit-btn position-absolute top-50 end-0 translate-middle-y">
                                 <img src="assets/images/send.svg" alt="send">
                             </button>
@@ -506,7 +514,7 @@
             </div>
             <div class="sidebar-single-item">
                 <div class="sidebar-info">
-                    <h3>Contact Info</h3>
+                    <h3 data-i18n="page.contact_us.offcanvasRight.h3_0">Contact Info</h3>
 
                     <ul class="p-0 m-0 list-unstyled info-list">
                         <li class="d-flex">
@@ -515,7 +523,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <span class="fw-semibold d-block text-secondary">Location</span>
-                                <span>70 East 65th Street, New York City</span>
+                                <span data-i18n="page.contact_us.offcanvasRight.span_0">70 East 65th Street, New York City</span>
                             </div>
                         </li>
                         <li class="d-flex">
@@ -524,7 +532,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <span class="fw-semibold d-block text-secondary">Email</span>
-                                <a href="/cdn-cgi/l/email-protection#e088858c8c8fa090858e9495ce838f8d"><span class="__cf_email__" data-cfemail="6008050c0c0f2010050e14154e030f0d">[email&#160;protected]</span></a>
+                                <a href="/cdn-cgi/l/email-protection#e088858c8c8fa090858e9495ce838f8d"><span class="__cf_email__" data-cfemail="6008050c0c0f2010050e14154e030f0d">[email&amp;#160;protected]</span></a>
                             </div>
                         </li>
                         <li class="d-flex">
@@ -540,7 +548,7 @@
                 </div>
             </div>
             <div class="sidebar-single-item">
-                <h3>Follow Us</h3>
+                <h3 data-i18n="footer.follow_us">Follow Us</h3>
 
                 <ul class="p-0 mb-0 list-unstyled d-flex align-items-center social-link">
                     <li>
@@ -580,7 +588,7 @@
                 <div class="modal-body d-flex justify-content-center align-items-center">
                     <form class="w-100" style="max-width: 500px;">
                         <div class="position-relative">
-                            <input id="searchInput" type="text" class="form-control bg-gray border-0" placeholder="Search">
+                            <input id="searchInput" type="text" class="form-control bg-gray border-0" placeholder="Search" data-i18n-placeholder="common.search">
                             <button class="border-0 bg-primary d-flex justify-content-center align-items-center position-absolute top-50 end-0 translate-middle-y m-2 my-0 rounded-3" type="button" style="width: 40px; height: 40px;">
                                     <i class="ti ti-search text-white"></i>
                                 </button>
@@ -595,8 +603,7 @@
     <!-- Start Map Area -->
     <div class="map-area overflow-hidden">
         <div class="container-fluid p-0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.738127623258!2d-112.08258651731859!3d33.638031404512375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b6e43d90e7133%3A0x5660419096e1421c!2sN%202nd%20Ln%2C%20Phoenix%2C%20AZ%2085023%2C%20USA!5e0!3m2!1sen!2sbd!4v1763449465161!5m2!1sen!2sbd"
-                style="border:0; width: 100%; height: 650px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.738127623258!2d-112.08258651731859!3d33.638031404512375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b6e43d90e7133%3A0x5660419096e1421c!2sN%202nd%20Ln%2C%20Phoenix%2C%20AZ%2085023%2C%20USA!5e0!3m2!1sen!2sbd!4v1763449465161!5m2!1sen!2sbd" style="border:0; width: 100%; height: 650px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     <!-- End Map Area -->
@@ -613,7 +620,7 @@
                             </div>
                         </div>
                         <div class="flex-grow-1">
-                            <h3>Phone Number</h3>
+                            <h3 data-i18n="page.contact_us.contact_us_info_single_item.h3_0">Phone Number</h3>
                             <a href="tel:+(002)0106-8710-594" class="d-block">+(002) 0106-8710-594</a>
                             <a href="tel:+(002)0106-8710-586" class="d-block">+(002) 0106-8710-586</a>
                         </div>
@@ -629,9 +636,9 @@
                             </div>
                         </div>
                         <div class="flex-grow-1">
-                            <h3>Our Email</h3>
-                            <a href="/cdn-cgi/l/email-protection#54272124243b26201424313a20217a373b39" class="d-block"><span class="__cf_email__" data-cfemail="52212722223d20261222373c26277c313d3f">[email&#160;protected]</span></a>
-                            <a href="/cdn-cgi/l/email-protection#4028252c2f2f0030252e34356e232f2d" class="d-block"><span class="__cf_email__" data-cfemail="7a121f1615153a0a1f140e0f54191517">[email&#160;protected]</span></a>
+                            <h3 data-i18n="page.contact_us.contact_us_info_single_item.h3_1">Our Email</h3>
+                            <a href="/cdn-cgi/l/email-protection#54272124243b26201424313a20217a373b39" class="d-block"><span class="__cf_email__" data-cfemail="52212722223d20261222373c26277c313d3f">[email&amp;#160;protected]</span></a>
+                            <a href="/cdn-cgi/l/email-protection#4028252c2f2f0030252e34356e232f2d" class="d-block"><span class="__cf_email__" data-cfemail="7a121f1615153a0a1f140e0f54191517">[email&amp;#160;protected]</span></a>
                         </div>
 
                         <img src="assets/images/email.png" class="position-absolute top-50 end-0 translate-middle-y mx-5" alt="email">
@@ -645,8 +652,8 @@
                             </div>
                         </div>
                         <div class="flex-grow-1">
-                            <h3>Our Location</h3>
-                            <p>West 2nd lane Inner circular road Phoenix Arizona, 59412</p>
+                            <h3 data-i18n="page.contact_us.contact_us_info_single_item.h3_2">Our Location</h3>
+                            <p data-i18n="page.contact_us.contact_us_info_single_item.p_0">West 2nd lane Inner circular road Phoenix Arizona, 59412</p>
                         </div>
 
                         <img src="assets/images/location-pin2.png" class="position-absolute top-50 end-0 translate-middle-y mx-5" alt="location-pin">
@@ -661,8 +668,8 @@
     <div class="contact-us-area-three ptb-120">
         <div class="container mw-1690">
             <div class="mb-50 text-center">
-                <span class="top-title">get in touch</span>
-                <h2 class="main-title mx-auto">Don’t Hesitate To Contact Us</h2>
+                <span class="top-title" data-i18n="page.contact_us.contact_us_area_three.span_0">get in touch</span>
+                <h2 class="main-title mx-auto" data-i18n="page.contact_us.contact_us_area_three.h2_0">Don’t Hesitate To Contact Us</h2>
             </div>
 
             <div class="row g-4 align-items-center" data-cues="slideInUp" data-duration="900">
@@ -681,33 +688,33 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group mb-20">
-                                        <input type="text" class="form-control border-0" placeholder="Name">
+                                        <input type="text" class="form-control border-0" placeholder="Name" data-i18n-placeholder="page.contact_us.contact_us_from.placeholder_0">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group mb-20">
-                                        <input type="email" class="form-control border-0" placeholder="Email">
+                                        <input type="email" class="form-control border-0" placeholder="Email" data-i18n-placeholder="page.contact_us.contact_us_from.placeholder_1">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group mb-20">
-                                        <input type="number" class="form-control border-0" placeholder="Phone">
+                                        <input type="number" class="form-control border-0" placeholder="Phone" data-i18n-placeholder="page.contact_us.contact_us_from.placeholder_2">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group mb-20">
-                                        <input type="text" class="form-control border-0" placeholder="Subject">
+                                        <input type="text" class="form-control border-0" placeholder="Subject" data-i18n-placeholder="page.contact_us.contact_us_from.placeholder_3">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group mb-20">
-                                        <textarea rows="7" class="form-control border-0" placeholder="Write Your Message"></textarea>
+                                        <textarea rows="7" class="form-control border-0" placeholder="Write Your Message" data-i18n-placeholder="page.contact_us.contact_us_from.placeholder_4"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <button type="submit" class="default-btn border-0 active">
                                             <span class="gap-10 d-flex">
-                                                <span>Send Message</span>
+                                                <span data-i18n="page.contact_us.contact_us_from.span_0">Send Message</span>
                                                 <img src="assets/images/icon-right-arrow.svg" alt="icon-right-arrow">
                                             </span>
                                         </button>
@@ -729,12 +736,12 @@
                     <div class="col-lg-6">
                         <div class="subscribe-content">
                             <span class="top-title">NEWSLETTER</span>
-                            <h2 class="main-title">Subscribe To Our Newsletter</h2>
+                            <h2 class="main-title" data-i18n="page.contact_us.subscribe_content.h2_0">Subscribe To Our Newsletter</h2>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <form class="position-relative z-1 mb-3">
-                            <input type="email" class="form-control" placeholder="Enter Your Email">
+                            <input type="email" class="form-control" placeholder="Enter Your Email" data-i18n-placeholder="footer.email_placeholder">
                             <button type="submit" class="default-btn position-absolute top-50 end-0 translate-middle-y bg-primary border-0 rounded-2">
                                     <span class="d-flex align-items-center gap-6">
                                         <img src="assets/images/send.svg" alt="send">
@@ -745,7 +752,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                             <label class="form-check-label" for="checkDefault">
-                                    I agree to the <a href="terms-conditions.html" class="text-secondary fw-semibold text-decoration-none">Terms & Conditions</a>
+                                    I agree to the <a href="terms-conditions.html" class="text-secondary fw-semibold text-decoration-none" data-i18n="footer.terms_conditions">Terms &amp; Conditions</a>
                                 </label>
                         </div>
                     </div>
@@ -765,11 +772,11 @@
                                 <img src="assets/images/white-logo.svg" alt="white-logo">
                             </a>
 
-                        <p class="text-white">Unlike traditional foiling methods digital foiling allows for precise application without the need for dies or plates making it faster more</p>
+                        <p class="text-white" data-i18n="page.contact_us.footer_single_widget.p_0">Unlike traditional foiling methods digital foiling allows for precise application without the need for dies or plates making it faster more</p>
 
                         <ul class="p-0 mb-0 list-unstyled social-link d-flex gap-10 align-items-center">
                             <li>
-                                <span class="text-white">Follow Us:</span>
+                                <span class="text-white" data-i18n="page.contact_us.footer_single_widget.span_0">Follow Us:</span>
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/" target="_blank">
@@ -791,30 +798,30 @@
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-single-widget ms-xl-5">
-                        <h3>Our Services</h3>
+                        <h3 data-i18n="footer.our_services">Our Services</h3>
 
                         <ul class="import-link p-0 m-0 list-unstyled">
                             <li>
-                                <a href="single-service.html">Home Painting</a>
+                                <a href="single-service.html" data-i18n="page.contact_us.footer_single_widget.a_0">Home Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Commercial Painting</a>
+                                <a href="single-service.html" data-i18n="page.contact_us.footer_single_widget.a_1">Commercial Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Interior Painting</a>
+                                <a href="single-service.html" data-i18n="page.contact_us.footer_single_widget.a_2">Interior Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Exterior Painting</a>
+                                <a href="single-service.html" data-i18n="page.contact_us.footer_single_widget.a_3">Exterior Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Custom Finishes</a>
+                                <a href="single-service.html" data-i18n="page.contact_us.footer_single_widget.a_4">Custom Finishes</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-single-widget ms-xl-5">
-                        <h3>Get In Touch</h3>
+                        <h3 data-i18n="footer.get_in_touch">Get In Touch</h3>
 
                         <ul class="p-0 m-0 list-unstyled info-list">
                             <li class="d-flex">
@@ -823,7 +830,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <span class="d-block text-white fw-bold fs-18 mb-1">Location</span>
-                                    <p>70 East 65th Street, New York City</p>
+                                    <p data-i18n="page.contact_us.footer_single_widget.p_1">70 East 65th Street, New York City</p>
                                 </div>
                             </li>
                             <li class="d-flex">
@@ -832,7 +839,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <span class="d-block text-white fw-bold fs-18 mb-1">Email</span>
-                                    <a href="/cdn-cgi/l/email-protection#2a424f4646456a5a4f445e5f04494547"><span class="__cf_email__" data-cfemail="93fbf6fffffcd3e3f6fde7e6bdf0fcfe">[email&#160;protected]</span></a>
+                                    <a href="/cdn-cgi/l/email-protection#2a424f4646456a5a4f445e5f04494547"><span class="__cf_email__" data-cfemail="93fbf6fffffcd3e3f6fde7e6bdf0fcfe">[email&amp;#160;protected]</span></a>
                                 </div>
                             </li>
                             <li class="d-flex">
@@ -900,11 +907,11 @@
     <div class="copy-right-area">
         <div class="container mw-1690">
             <div class="d-flex flex-wrap gap-10 justify-content-center justify-content-lg-between align-items-center">
-                <p class="mb-0"><span>© Pentu.</span> All Rights Reserved by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                <p class="mb-0"><span data-i18n="page.contact_us.content.span_1">© Qatar Paint.</span> All Rights Reserved by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
 
                 <div class="d-flex flex-wrap gap-5 policy">
-                    <a href="privacy-policy.html" class="text-decoration-none">Privacy Policy</a>
-                    <a href="terms-conditions.html" class="text-decoration-none">Terms & Conditions</a>
+                    <a href="privacy-policy.html" class="text-decoration-none" data-i18n="footer.privacy_policy">Privacy Policy</a>
+                    <a href="terms-conditions.html" class="text-decoration-none" data-i18n="footer.terms_conditions">Terms &amp; Conditions</a>
                 </div>
             </div>
         </div>
@@ -940,14 +947,15 @@
     <!-- End RTL & Dark Switch Area -->
 
     <!-- Link Of JS File -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer=""></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/scrollCue.min.js"></script>
     <script src="assets/js/fslightbox.js"></script>
     <script src="assets/js/ukiyo.min.js"></script>
     <script src="assets/js/lenis.js"></script>
-    <script src="assets/js/custom.js"></script>
-</body>
+    
+		<script src="assets/js/i18n.js"></script><script src="assets/js/custom.js"></script>
 
-</html>
+
+</body></html>

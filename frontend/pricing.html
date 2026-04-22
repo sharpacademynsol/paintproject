@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="zxx">
-
-<head>
+<!DOCTYPE html><html lang="zxx"><head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,11 +9,16 @@
     <link rel="stylesheet" href="assets/css/tabler-icons.min.css">
     <link rel="stylesheet" href="assets/css/forma-djr.css">
     <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/rtl-support.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
+		<!-- Google Fonts for Arabic -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <!-- Title -->
-    <title>Pentu - Painting, Building & Renovation HTML Template</title>
+    <title data-i18n="page.pricing.title">Qatar Paint - Professional Painting Services</title>
 </head>
 
 <body>
@@ -35,21 +37,21 @@
                 <div class="col-xl-6 col-lg-7">
                     <ul class="d-flex flex-wrap justify-content-center justify-content-lg-start flex-md-nowrap align-items-center p-0 m-0 list-unstyled header-info">
                         <li class="d-flex align-items-center gap-6">
-                            <span class="fw-semibold">Location:</span>
-                            <span>70 East 65th Street, New York City</span>
+                            <span class="fw-semibold" data-i18n="header.location">Location:</span>
+                            <span data-i18n="header.location_value">70 East 65th Street, New York City</span>
                         </li>
                         <li class="d-flex align-items-center gap-6">
-                            <span class="fw-semibold">Email:</span>
-                            <a href="/cdn-cgi/l/email-protection#244c4148484b6454414a50510a474b49" class="text-decoration-none"><span class="__cf_email__" data-cfemail="543c3138383b1424313a20217a373b39">[email&#160;protected]</span></a>
+                            <span class="fw-semibold" data-i18n="header.email">Email:</span>
+                            <a href="/cdn-cgi/l/email-protection#244c4148484b6454414a50510a474b49" class="text-decoration-none"><span class="__cf_email__" data-cfemail="543c3138383b1424313a20217a373b39">[email&amp;#160;protected]</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xl-6 col-lg-5">
                     <div class="d-flex justify-content-center justify-content-lg-end align-items-center link-social-wrap">
                         <div class="d-flex link">
-                            <a href="about-us.html">About</a>
-                            <a href="faqs.html">FAQ</a>
-                            <a href="testimonials.html">Testimonials</a>
+                            <a href="about-us.html" data-i18n="header.about">About</a>
+                            <a href="faqs.html" data-i18n="header.faq">FAQ</a>
+                            <a href="testimonials.html" data-i18n="header.testimonials">Testimonials</a>
                         </div>
 
                         <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
@@ -64,6 +66,12 @@
                                         <i class="ti ti-brand-instagram"></i>
                                     </a>
                             </div>
+
+								<!-- Language Switcher -->
+								<div class="language-switcher">
+									<button class="lang-btn active" data-lang="en" onclick="i18n.switchLanguage('en')">EN</button>
+									<button class="lang-btn" data-lang="ar" onclick="i18n.switchLanguage('ar')">عربي</button>
+								</div>
                         </div>
                     </div>
                 </div>
@@ -85,28 +93,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link active" href="/">
+                        <a class="nav-link active" href="/" data-i18n="nav.home">
                             Home
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.pages">
                                 Pages
                             </a>
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="team.html">
+                                <a class="dropdown-item" href="team.html" data-i18n="nav.team">
                                         Team
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="request-a-quote.html">
+                                <a class="dropdown-item" href="request-a-quote.html" data-i18n="page.pricing.navbarSupportedContent.a_0">
                                         Request A Quote
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="my-account.html">
+                                <a class="dropdown-item" href="my-account.html" data-i18n="nav.my_account">
                                         My Account
                                     </a>
                             </li>
@@ -117,62 +125,62 @@
 
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="products.html">
+                                        <a class="dropdown-item" href="products.html" data-i18n="nav.products">
                                                 Products
                                             </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="single-product.html">
+                                        <a class="dropdown-item" href="single-product.html" data-i18n="page.pricing.navbarSupportedContent.a_1">
                                                 Single Product
                                             </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="cart.html">
+                                        <a class="dropdown-item" href="cart.html" data-i18n="nav.cart">
                                                 Cart
                                             </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="checkout.html">
+                                        <a class="dropdown-item" href="checkout.html" data-i18n="nav.checkout">
                                                 Checkout
                                             </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="privacy-policy.html">
+                                <a class="dropdown-item" href="privacy-policy.html" data-i18n="nav.privacy">
                                         Privacy Policy
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="terms-conditions.html">
-                                        Terms & Conditions
+                                <a class="dropdown-item" href="terms-conditions.html" data-i18n="nav.terms">
+                                        Terms &amp; Conditions
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="error-404.html">
+                                <a class="dropdown-item" href="error-404.html" data-i18n="nav.error_404">
                                         Error 404
                                     </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.services">
                                 Services
                             </a>
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="services.html">
+                                <a class="dropdown-item" href="services.html" data-i18n="nav.services">
                                         Services 
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-service.html">
+                                <a class="dropdown-item" href="single-service.html" data-i18n="page.pricing.navbarSupportedContent.a_2">
                                         Single Service
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item active" href="pricing.html">
+                                <a class="dropdown-item active" href="pricing.html" data-i18n="nav.pricing">
                                         Pricing
                                     </a>
                             </li>
@@ -190,47 +198,47 @@
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-project.html">
+                                <a class="dropdown-item" href="single-project.html" data-i18n="page.pricing.navbarSupportedContent.a_3">
                                         Single Project
                                     </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.blog">
                                 Blog
                             </a>
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="blog.html">
+                                <a class="dropdown-item" href="blog.html" data-i18n="nav.blog">
                                         Blog 
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-blog.html">
+                                <a class="dropdown-item" href="single-blog.html" data-i18n="page.pricing.navbarSupportedContent.a_4">
                                         Single Blog
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="categories.html">
+                                <a class="dropdown-item" href="categories.html" data-i18n="nav.categories">
                                         Categories
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="tags.html">
+                                <a class="dropdown-item" href="tags.html" data-i18n="nav.tags">
                                         Tags
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="author.html">
+                                <a class="dropdown-item" href="author.html" data-i18n="nav.author">
                                         Author
                                     </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="contact-us.html">
+                        <a class="nav-link" href="contact-us.html" data-i18n="nav.contact">
                                 Contact Us
                             </a>
                     </li>
@@ -248,7 +256,7 @@
                 </div>
                 <a href="contact-us.html" class="default-btn d-none d-sm-inline-block">
                     <div class="d-flex align-items-center gap-10">
-                        <span>Get Free Quote</span>
+                        <span data-i18n="page.pricing.content.span_0">Get Free Quote</span>
                         <img src="assets/images/icon-right-arrow.svg" alt="icon-right-arrow">
                     </div>
                 </a>
@@ -286,7 +294,7 @@
 
                     <ul class="mobile-menu-items">
                         <li>
-                            <a class="dropdown-item" href="index.html">
+                            <a class="dropdown-item" href="index.html" data-i18n="page.pricing.offcanvasExample.a_0">
                                     Painting Company
                                 </a>
                         </li>
@@ -310,7 +318,7 @@
 
                     <ul class="mobile-menu-items">
                         <li>
-                            <a class="dropdown-item" href="about-us.html">
+                            <a class="dropdown-item" href="about-us.html" data-i18n="page.pricing.offcanvasExample.a_1">
                                     About Us
                                 </a>
                         </li>
@@ -330,12 +338,12 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="request-a-quote.html">
+                            <a class="dropdown-item" href="request-a-quote.html" data-i18n="page.pricing.offcanvasExample.a_2">
                                     Request A Quote
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="my-account.html">
+                            <a class="dropdown-item" href="my-account.html" data-i18n="page.pricing.offcanvasExample.a_3">
                                     My Account
                                 </a>
                         </li>
@@ -345,7 +353,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-product.html">
+                            <a class="dropdown-item" href="single-product.html" data-i18n="page.pricing.offcanvasExample.a_4">
                                     Single Product
                                 </a>
                         </li>
@@ -360,17 +368,17 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="privacy-policy.html">
+                            <a class="dropdown-item" href="privacy-policy.html" data-i18n="footer.privacy_policy">
                                     Privacy Policy
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="terms-conditions.html">
-                                    Terms & Conditions
+                            <a class="dropdown-item" href="terms-conditions.html" data-i18n="footer.terms_conditions">
+                                    Terms &amp; Conditions
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="error-404.html">
+                            <a class="dropdown-item" href="error-404.html" data-i18n="page.pricing.offcanvasExample.a_5">
                                     Error 404
                                 </a>
                         </li>
@@ -389,7 +397,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-service.html">
+                            <a class="dropdown-item" href="single-service.html" data-i18n="page.pricing.offcanvasExample.a_6">
                                     Single Service
                                 </a>
                         </li>
@@ -413,7 +421,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-project.html">
+                            <a class="dropdown-item" href="single-project.html" data-i18n="page.pricing.offcanvasExample.a_7">
                                     Single Project
                                 </a>
                         </li>
@@ -432,7 +440,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-blog.html">
+                            <a class="dropdown-item" href="single-blog.html" data-i18n="page.pricing.offcanvasExample.a_8">
                                     Single Blog
                                 </a>
                         </li>
@@ -455,7 +463,7 @@
                 </li>
 
                 <li class="mobile-menu-list without-icon border-bottom">
-                    <a href="contact-us.html" class="nav-link">
+                    <a href="contact-us.html" class="nav-link" data-i18n="page.pricing.offcanvasExample.a_9">
                             Contact Us
                         </a>
                 </li>
@@ -492,12 +500,12 @@
         </div>
         <div class="offcanvas-body">
             <div class="sidebar-single-item">
-                <p>We pride ourselves on attention to detail reliability and a customer-first approach that ensures satisfaction from start to finish from color consultation to coat</p>
+                <p data-i18n="page.pricing.offcanvasRight.p_0">We pride ourselves on attention to detail reliability and a customer-first approach that ensures satisfaction from start to finish from color consultation to coat</p>
 
                 <div class="newsletter-form">
                     <h3>Newsletter</h3>
                     <form class="position-relative z-1">
-                        <input type="email" class="form-control" placeholder="Enter Your Email">
+                        <input type="email" class="form-control" placeholder="Enter Your Email" data-i18n-placeholder="footer.email_placeholder">
                         <button type="submit" class="submit-btn position-absolute top-50 end-0 translate-middle-y">
                                 <img src="assets/images/send.svg" alt="send">
                             </button>
@@ -506,7 +514,7 @@
             </div>
             <div class="sidebar-single-item">
                 <div class="sidebar-info">
-                    <h3>Contact Info</h3>
+                    <h3 data-i18n="page.pricing.offcanvasRight.h3_0">Contact Info</h3>
 
                     <ul class="p-0 m-0 list-unstyled info-list">
                         <li class="d-flex">
@@ -515,7 +523,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <span class="fw-semibold d-block text-secondary">Location</span>
-                                <span>70 East 65th Street, New York City</span>
+                                <span data-i18n="page.pricing.offcanvasRight.span_0">70 East 65th Street, New York City</span>
                             </div>
                         </li>
                         <li class="d-flex">
@@ -524,7 +532,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <span class="fw-semibold d-block text-secondary">Email</span>
-                                <a href="/cdn-cgi/l/email-protection#650d0009090a2515000b11104b060a08"><span class="__cf_email__" data-cfemail="adc5c8c1c1c2edddc8c3d9d883cec2c0">[email&#160;protected]</span></a>
+                                <a href="/cdn-cgi/l/email-protection#650d0009090a2515000b11104b060a08"><span class="__cf_email__" data-cfemail="adc5c8c1c1c2edddc8c3d9d883cec2c0">[email&amp;#160;protected]</span></a>
                             </div>
                         </li>
                         <li class="d-flex">
@@ -540,7 +548,7 @@
                 </div>
             </div>
             <div class="sidebar-single-item">
-                <h3>Follow Us</h3>
+                <h3 data-i18n="footer.follow_us">Follow Us</h3>
 
                 <ul class="p-0 mb-0 list-unstyled d-flex align-items-center social-link">
                     <li>
@@ -580,7 +588,7 @@
                 <div class="modal-body d-flex justify-content-center align-items-center">
                     <form class="w-100" style="max-width: 500px;">
                         <div class="position-relative">
-                            <input id="searchInput" type="text" class="form-control bg-gray border-0" placeholder="Search">
+                            <input id="searchInput" type="text" class="form-control bg-gray border-0" placeholder="Search" data-i18n-placeholder="common.search">
                             <button class="border-0 bg-primary d-flex justify-content-center align-items-center position-absolute top-50 end-0 translate-middle-y m-2 my-0 rounded-3" type="button" style="width: 40px; height: 40px;">
                                     <i class="ti ti-search text-white"></i>
                                 </button>
@@ -612,45 +620,45 @@
     <div class="pricing-area ptb-120">
         <div class="container mw-1690">
             <div class="text-center mb-60 mt-0">
-                <span class="top-title">Pricing Plan</span>
-                <h2 class="main-title mx-auto mw-620">Select Your Suitable Packages</h2>
+                <span class="top-title" data-i18n="page.pricing.pricing_area.span_0">Pricing Plan</span>
+                <h2 class="main-title mx-auto mw-620" data-i18n="page.pricing.pricing_area.h2_0">Select Your Suitable Packages</h2>
             </div>
 
             <div class="row g-4 justify-content-center">
                 <div class="col-xxl-4 col-md-6">
                     <div class="pricing-single-item bg-gray2">
                         <div class="price-header">
-                            <h2>Home Painting</h2>
-                            <p>Home painting is one of the most effective ways to refresh and personalize your living space</p>
+                            <h2 data-i18n="page.pricing.price_header.h2_0">Home Painting</h2>
+                            <p data-i18n="page.pricing.price_header.p_0">Home painting is one of the most effective ways to refresh and personalize your living space</p>
                             <h1>$39.99/ <sub>(Hourly)</sub></h1>
                         </div>
 
                         <a href="contact-us.html" class="default-btn w-100 active">
                                 <span class="gap-10 d-flex justify-content-center">
-                                    <span>Booking Now</span>
+                                    <span data-i18n="page.pricing.pricing_single_item.span_0">Booking Now</span>
                                     <img src="assets/images/icon-right-arrow.svg" alt="icon-right-arrow">
                                 </span>
                             </a>
 
                         <ul class="px-0 m-0 list-unstyled">
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>Dusting and wiping all surfaces</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_1">Dusting and wiping all surfaces</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>Emptying trash bins</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_2">Emptying trash bins</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>Vacuuming and mopping floors</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_3">Vacuuming and mopping floors</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>Livingston cleaning</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_4">Livingston cleaning</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>painting bathrooms and kitchens</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_5">painting bathrooms and kitchens</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                         </ul>
@@ -659,37 +667,37 @@
                 <div class="col-xxl-4 col-md-6">
                     <div class="pricing-single-item bg-gray2">
                         <div class="price-header">
-                            <h2>Office Painting</h2>
-                            <p>Office painting plays key role in creating a professional productive visually appealing work environment</p>
+                            <h2 data-i18n="page.pricing.price_header.h2_1">Office Painting</h2>
+                            <p data-i18n="page.pricing.price_header.p_1">Office painting plays key role in creating a professional productive visually appealing work environment</p>
                             <h1>$59.99/ <sub>(Hourly)</sub></h1>
                         </div>
 
                         <a href="contact-us.html" class="default-btn w-100">
                                 <span class="gap-10 d-flex justify-content-center">
-                                    <span>Booking Now</span>
+                                    <span data-i18n="page.pricing.pricing_single_item.span_6">Booking Now</span>
                                     <img src="assets/images/icon-right-arrow.svg" alt="icon-right-arrow">
                                 </span>
                             </a>
 
                         <ul class="px-0 m-0 list-unstyled">
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>All Services In Basic Painting</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_7">All Services In Basic Painting</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>Painting Inside Appliances (Oven, Fridge)</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_8">Painting Inside Appliances (Oven, Fridge)</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>Painting Bathrooms And Kitchens</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_9">Painting Bathrooms And Kitchens</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>Baseboard And Molding Painting Trash Bins</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_10">Baseboard And Molding Painting Trash Bins</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>Window And Blind Painting</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_11">Window And Blind Painting</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                         </ul>
@@ -698,37 +706,37 @@
                 <div class="col-xxl-4 col-md-6">
                     <div class="pricing-single-item bg-gray2">
                         <div class="price-header">
-                            <h2>Custom Wall Finish</h2>
-                            <p>A custom wall finish is unique way to elevate the look and feel of any interior space adding texture depth</p>
+                            <h2 data-i18n="page.pricing.price_header.h2_2">Custom Wall Finish</h2>
+                            <p data-i18n="page.pricing.price_header.p_2">A custom wall finish is unique way to elevate the look and feel of any interior space adding texture depth</p>
                             <h1>$79.99/ <sub>(Hourly)</sub></h1>
                         </div>
 
                         <a href="contact-us.html" class="default-btn w-100 active">
                                 <span class="gap-10 d-flex justify-content-center">
-                                    <span>Booking Now</span>
+                                    <span data-i18n="page.pricing.pricing_single_item.span_12">Booking Now</span>
                                     <img src="assets/images/icon-right-arrow.svg" alt="icon-right-arrow">
                                 </span>
                             </a>
 
                         <ul class="px-0 m-0 list-unstyled">
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>Tailored cleaning schedule</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_13">Tailored cleaning schedule</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>Flexible hours to minimize disruption</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_14">Flexible hours to minimize disruption</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>painting bathrooms and kitchens</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_15">painting bathrooms and kitchens</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>Specialized painting for different industries</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_16">Specialized painting for different industries</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                             <li class="d-flex align-items-center justify-content-between">
-                                <span>Ongoing maintenance and support</span>
+                                <span data-i18n="page.pricing.pricing_single_item.span_17">Ongoing maintenance and support</span>
                                 <i class="ti ti-circle-check-filled"></i>
                             </li>
                         </ul>
@@ -742,51 +750,51 @@
     <!-- Start Marquee Area -->
     <div class="marquee-wrapper monogram-wrap pb-120">
         <div class="marquee speed-300">
-            <span class="monogram text-secondary">Quality Painting Excellence</span>
+            <span class="monogram text-secondary" data-i18n="page.pricing.content.span_1">Quality Painting Excellence</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Certified Painters Guarantee</span>
+            <span class="monogram text-secondary" data-i18n="page.pricing.content.span_2">Certified Painters Guarantee</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Quality Painting Excellence</span>
+            <span class="monogram text-secondary" data-i18n="page.pricing.content.span_3">Quality Painting Excellence</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Certified Painters Guarantee</span>
+            <span class="monogram text-secondary" data-i18n="page.pricing.content.span_4">Certified Painters Guarantee</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Quality Painting Excellence</span>
+            <span class="monogram text-secondary" data-i18n="page.pricing.content.span_5">Quality Painting Excellence</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Certified Painters Guarantee</span>
+            <span class="monogram text-secondary" data-i18n="page.pricing.content.span_6">Certified Painters Guarantee</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Quality Painting Excellence</span>
+            <span class="monogram text-secondary" data-i18n="page.pricing.content.span_7">Quality Painting Excellence</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Certified Painters Guarantee</span>
+            <span class="monogram text-secondary" data-i18n="page.pricing.content.span_8">Certified Painters Guarantee</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Quality Painting Excellence</span>
+            <span class="monogram text-secondary" data-i18n="page.pricing.content.span_9">Quality Painting Excellence</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Certified Painters Guarantee</span>
+            <span class="monogram text-secondary" data-i18n="page.pricing.content.span_10">Certified Painters Guarantee</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Quality Painting Excellence</span>
+            <span class="monogram text-secondary" data-i18n="page.pricing.content.span_11">Quality Painting Excellence</span>
             <span class="monogram">
                     <img src="assets/images/monogram-img.jpg" alt="monogram-img">
                 </span>
-            <span class="monogram text-secondary">Comfort and familiarity</span>
+            <span class="monogram text-secondary" data-i18n="page.pricing.content.span_12">Comfort and familiarity</span>
         </div>
     </div>
     <!-- End Marquee Area -->
@@ -799,12 +807,12 @@
                     <div class="col-lg-6">
                         <div class="subscribe-content">
                             <span class="top-title">NEWSLETTER</span>
-                            <h2 class="main-title">Subscribe To Our Newsletter</h2>
+                            <h2 class="main-title" data-i18n="page.pricing.subscribe_content.h2_0">Subscribe To Our Newsletter</h2>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <form class="position-relative z-1 mb-3">
-                            <input type="email" class="form-control" placeholder="Enter Your Email">
+                            <input type="email" class="form-control" placeholder="Enter Your Email" data-i18n-placeholder="footer.email_placeholder">
                             <button type="submit" class="default-btn position-absolute top-50 end-0 translate-middle-y bg-primary border-0 rounded-2">
                                     <span class="d-flex align-items-center gap-6">
                                         <img src="assets/images/send.svg" alt="send">
@@ -815,7 +823,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                             <label class="form-check-label" for="checkDefault">
-                                    I agree to the <a href="terms-conditions.html" class="text-secondary fw-semibold text-decoration-none">Terms & Conditions</a>
+                                    I agree to the <a href="terms-conditions.html" class="text-secondary fw-semibold text-decoration-none" data-i18n="footer.terms_conditions">Terms &amp; Conditions</a>
                                 </label>
                         </div>
                     </div>
@@ -835,11 +843,11 @@
                                 <img src="assets/images/white-logo.svg" alt="white-logo">
                             </a>
 
-                        <p class="text-white">Unlike traditional foiling methods digital foiling allows for precise application without the need for dies or plates making it faster more</p>
+                        <p class="text-white" data-i18n="page.pricing.footer_single_widget.p_0">Unlike traditional foiling methods digital foiling allows for precise application without the need for dies or plates making it faster more</p>
 
                         <ul class="p-0 mb-0 list-unstyled social-link d-flex gap-10 align-items-center">
                             <li>
-                                <span class="text-white">Follow Us:</span>
+                                <span class="text-white" data-i18n="page.pricing.footer_single_widget.span_0">Follow Us:</span>
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/" target="_blank">
@@ -861,30 +869,30 @@
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-single-widget ms-xl-5">
-                        <h3>Our Services</h3>
+                        <h3 data-i18n="footer.our_services">Our Services</h3>
 
                         <ul class="import-link p-0 m-0 list-unstyled">
                             <li>
-                                <a href="single-service.html">Home Painting</a>
+                                <a href="single-service.html" data-i18n="page.pricing.footer_single_widget.a_0">Home Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Commercial Painting</a>
+                                <a href="single-service.html" data-i18n="page.pricing.footer_single_widget.a_1">Commercial Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Interior Painting</a>
+                                <a href="single-service.html" data-i18n="page.pricing.footer_single_widget.a_2">Interior Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Exterior Painting</a>
+                                <a href="single-service.html" data-i18n="page.pricing.footer_single_widget.a_3">Exterior Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Custom Finishes</a>
+                                <a href="single-service.html" data-i18n="page.pricing.footer_single_widget.a_4">Custom Finishes</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-single-widget ms-xl-5">
-                        <h3>Get In Touch</h3>
+                        <h3 data-i18n="footer.get_in_touch">Get In Touch</h3>
 
                         <ul class="p-0 m-0 list-unstyled info-list">
                             <li class="d-flex">
@@ -893,7 +901,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <span class="d-block text-white fw-bold fs-18 mb-1">Location</span>
-                                    <p>70 East 65th Street, New York City</p>
+                                    <p data-i18n="page.pricing.footer_single_widget.p_1">70 East 65th Street, New York City</p>
                                 </div>
                             </li>
                             <li class="d-flex">
@@ -902,7 +910,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <span class="d-block text-white fw-bold fs-18 mb-1">Email</span>
-                                    <a href="/cdn-cgi/l/email-protection#e78f828b8b88a79782899392c984888a"><span class="__cf_email__" data-cfemail="5038353c3c3f1020353e24257e333f3d">[email&#160;protected]</span></a>
+                                    <a href="/cdn-cgi/l/email-protection#e78f828b8b88a79782899392c984888a"><span class="__cf_email__" data-cfemail="5038353c3c3f1020353e24257e333f3d">[email&amp;#160;protected]</span></a>
                                 </div>
                             </li>
                             <li class="d-flex">
@@ -970,11 +978,11 @@
     <div class="copy-right-area">
         <div class="container mw-1690">
             <div class="d-flex flex-wrap gap-10 justify-content-center justify-content-lg-between align-items-center">
-                <p class="mb-0"><span>© Pentu.</span> All Rights Reserved by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                <p class="mb-0"><span data-i18n="page.pricing.content.span_13">© Qatar Paint.</span> All Rights Reserved by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
 
                 <div class="d-flex flex-wrap gap-5 policy">
-                    <a href="privacy-policy.html" class="text-decoration-none">Privacy Policy</a>
-                    <a href="terms-conditions.html" class="text-decoration-none">Terms & Conditions</a>
+                    <a href="privacy-policy.html" class="text-decoration-none" data-i18n="footer.privacy_policy">Privacy Policy</a>
+                    <a href="terms-conditions.html" class="text-decoration-none" data-i18n="footer.terms_conditions">Terms &amp; Conditions</a>
                 </div>
             </div>
         </div>
@@ -1010,14 +1018,15 @@
     <!-- End RTL & Dark Switch Area -->
 
     <!-- Link Of JS File -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer=""></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/scrollCue.min.js"></script>
     <script src="assets/js/fslightbox.js"></script>
     <script src="assets/js/ukiyo.min.js"></script>
     <script src="assets/js/lenis.js"></script>
-    <script src="assets/js/custom.js"></script>
-</body>
+    
+		<script src="assets/js/i18n.js"></script><script src="assets/js/custom.js"></script>
 
-</html>
+
+</body></html>

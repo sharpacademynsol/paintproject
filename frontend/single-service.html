@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="zxx">
-
-<head>
+<!DOCTYPE html><html lang="zxx"><head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,11 +9,16 @@
     <link rel="stylesheet" href="assets/css/tabler-icons.min.css">
     <link rel="stylesheet" href="assets/css/forma-djr.css">
     <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/rtl-support.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
+		<!-- Google Fonts for Arabic -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <!-- Title -->
-    <title>Pentu - Painting, Building & Renovation HTML Template</title>
+    <title data-i18n="page.single_service.title">Qatar Paint - Professional Painting Services</title>
 </head>
 
 <body>
@@ -35,21 +37,21 @@
                 <div class="col-xl-6 col-lg-7">
                     <ul class="d-flex flex-wrap justify-content-center justify-content-lg-start flex-md-nowrap align-items-center p-0 m-0 list-unstyled header-info">
                         <li class="d-flex align-items-center gap-6">
-                            <span class="fw-semibold">Location:</span>
-                            <span>70 East 65th Street, New York City</span>
+                            <span class="fw-semibold" data-i18n="header.location">Location:</span>
+                            <span data-i18n="header.location_value">70 East 65th Street, New York City</span>
                         </li>
                         <li class="d-flex align-items-center gap-6">
-                            <span class="fw-semibold">Email:</span>
-                            <a href="/cdn-cgi/l/email-protection#95fdf0f9f9fad5e5f0fbe1e0bbf6faf8" class="text-decoration-none"><span class="__cf_email__" data-cfemail="80e8e5ececefc0f0e5eef4f5aee3efed">[email&#160;protected]</span></a>
+                            <span class="fw-semibold" data-i18n="header.email">Email:</span>
+                            <a href="/cdn-cgi/l/email-protection#95fdf0f9f9fad5e5f0fbe1e0bbf6faf8" class="text-decoration-none"><span class="__cf_email__" data-cfemail="80e8e5ececefc0f0e5eef4f5aee3efed">[email&amp;#160;protected]</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xl-6 col-lg-5">
                     <div class="d-flex justify-content-center justify-content-lg-end align-items-center link-social-wrap">
                         <div class="d-flex link">
-                            <a href="about-us.html">About</a>
-                            <a href="faqs.html">FAQ</a>
-                            <a href="testimonials.html">Testimonials</a>
+                            <a href="about-us.html" data-i18n="header.about">About</a>
+                            <a href="faqs.html" data-i18n="header.faq">FAQ</a>
+                            <a href="testimonials.html" data-i18n="header.testimonials">Testimonials</a>
                         </div>
 
                         <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
@@ -64,6 +66,12 @@
                                         <i class="ti ti-brand-instagram"></i>
                                     </a>
                             </div>
+
+								<!-- Language Switcher -->
+								<div class="language-switcher">
+									<button class="lang-btn active" data-lang="en" onclick="i18n.switchLanguage('en')">EN</button>
+									<button class="lang-btn" data-lang="ar" onclick="i18n.switchLanguage('ar')">عربي</button>
+								</div>
                         </div>
                     </div>
                 </div>
@@ -85,29 +93,29 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link active" href="/">
+                        <a class="nav-link active" href="/" data-i18n="nav.home">
                             Home
                         </a>
                         
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.pages">
                                 Pages
                             </a>
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="team.html">
+                                <a class="dropdown-item" href="team.html" data-i18n="nav.team">
                                         Team
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="request-a-quote.html">
+                                <a class="dropdown-item" href="request-a-quote.html" data-i18n="page.single_service.navbarSupportedContent.a_0">
                                         Request A Quote
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="my-account.html">
+                                <a class="dropdown-item" href="my-account.html" data-i18n="nav.my_account">
                                         My Account
                                     </a>
                             </li>
@@ -118,62 +126,62 @@
 
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="products.html">
+                                        <a class="dropdown-item" href="products.html" data-i18n="nav.products">
                                                 Products
                                             </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="single-product.html">
+                                        <a class="dropdown-item" href="single-product.html" data-i18n="page.single_service.navbarSupportedContent.a_1">
                                                 Single Product
                                             </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="cart.html">
+                                        <a class="dropdown-item" href="cart.html" data-i18n="nav.cart">
                                                 Cart
                                             </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="checkout.html">
+                                        <a class="dropdown-item" href="checkout.html" data-i18n="nav.checkout">
                                                 Checkout
                                             </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="privacy-policy.html">
+                                <a class="dropdown-item" href="privacy-policy.html" data-i18n="nav.privacy">
                                         Privacy Policy
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="terms-conditions.html">
-                                        Terms & Conditions
+                                <a class="dropdown-item" href="terms-conditions.html" data-i18n="nav.terms">
+                                        Terms &amp; Conditions
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="error-404.html">
+                                <a class="dropdown-item" href="error-404.html" data-i18n="nav.error_404">
                                         Error 404
                                     </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.services">
                                 Services
                             </a>
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="services.html">
+                                <a class="dropdown-item" href="services.html" data-i18n="nav.services">
                                         Services 
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item active" href="single-service.html">
+                                <a class="dropdown-item active" href="single-service.html" data-i18n="page.single_service.navbarSupportedContent.a_2">
                                         Single Service
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="pricing.html">
+                                <a class="dropdown-item" href="pricing.html" data-i18n="nav.pricing">
                                         Pricing
                                     </a>
                             </li>
@@ -191,47 +199,47 @@
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-project.html">
+                                <a class="dropdown-item" href="single-project.html" data-i18n="page.single_service.navbarSupportedContent.a_3">
                                         Single Project
                                     </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.blog">
                                 Blog
                             </a>
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="blog.html">
+                                <a class="dropdown-item" href="blog.html" data-i18n="nav.blog">
                                         Blog 
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="single-blog.html">
+                                <a class="dropdown-item" href="single-blog.html" data-i18n="page.single_service.navbarSupportedContent.a_4">
                                         Single Blog
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="categories.html">
+                                <a class="dropdown-item" href="categories.html" data-i18n="nav.categories">
                                         Categories
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="tags.html">
+                                <a class="dropdown-item" href="tags.html" data-i18n="nav.tags">
                                         Tags
                                     </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="author.html">
+                                <a class="dropdown-item" href="author.html" data-i18n="nav.author">
                                         Author
                                     </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="contact-us.html">
+                        <a class="nav-link" href="contact-us.html" data-i18n="nav.contact">
                                 Contact Us
                             </a>
                     </li>
@@ -249,7 +257,7 @@
                 </div>
                 <a href="contact-us.html" class="default-btn d-none d-sm-inline-block">
                     <div class="d-flex align-items-center gap-10">
-                        <span>Get Free Quote</span>
+                        <span data-i18n="page.single_service.content.span_0">Get Free Quote</span>
                         <img src="assets/images/icon-right-arrow.svg" alt="icon-right-arrow">
                     </div>
                 </a>
@@ -287,7 +295,7 @@
 
                     <ul class="mobile-menu-items">
                         <li>
-                            <a class="dropdown-item" href="index.html">
+                            <a class="dropdown-item" href="index.html" data-i18n="page.single_service.offcanvasExample.a_0">
                                     Painting Company
                                 </a>
                         </li>
@@ -311,7 +319,7 @@
 
                     <ul class="mobile-menu-items">
                         <li>
-                            <a class="dropdown-item" href="about-us.html">
+                            <a class="dropdown-item" href="about-us.html" data-i18n="page.single_service.offcanvasExample.a_1">
                                     About Us
                                 </a>
                         </li>
@@ -331,12 +339,12 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="request-a-quote.html">
+                            <a class="dropdown-item" href="request-a-quote.html" data-i18n="page.single_service.offcanvasExample.a_2">
                                     Request A Quote
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="my-account.html">
+                            <a class="dropdown-item" href="my-account.html" data-i18n="page.single_service.offcanvasExample.a_3">
                                     My Account
                                 </a>
                         </li>
@@ -346,7 +354,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-product.html">
+                            <a class="dropdown-item" href="single-product.html" data-i18n="page.single_service.offcanvasExample.a_4">
                                     Single Product
                                 </a>
                         </li>
@@ -361,17 +369,17 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="privacy-policy.html">
+                            <a class="dropdown-item" href="privacy-policy.html" data-i18n="footer.privacy_policy">
                                     Privacy Policy
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="terms-conditions.html">
-                                    Terms & Conditions
+                            <a class="dropdown-item" href="terms-conditions.html" data-i18n="footer.terms_conditions">
+                                    Terms &amp; Conditions
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="error-404.html">
+                            <a class="dropdown-item" href="error-404.html" data-i18n="page.single_service.offcanvasExample.a_5">
                                     Error 404
                                 </a>
                         </li>
@@ -390,7 +398,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item active" href="single-service.html">
+                            <a class="dropdown-item active" href="single-service.html" data-i18n="page.single_service.offcanvasExample.a_6">
                                     Single Service
                                 </a>
                         </li>
@@ -414,7 +422,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-project.html">
+                            <a class="dropdown-item" href="single-project.html" data-i18n="page.single_service.offcanvasExample.a_7">
                                     Single Project
                                 </a>
                         </li>
@@ -433,7 +441,7 @@
                                 </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="single-blog.html">
+                            <a class="dropdown-item" href="single-blog.html" data-i18n="page.single_service.offcanvasExample.a_8">
                                     Single Blog
                                 </a>
                         </li>
@@ -456,7 +464,7 @@
                 </li>
 
                 <li class="mobile-menu-list without-icon border-bottom">
-                    <a href="contact-us.html" class="nav-link">
+                    <a href="contact-us.html" class="nav-link" data-i18n="page.single_service.offcanvasExample.a_9">
                             Contact Us
                         </a>
                 </li>
@@ -493,12 +501,12 @@
         </div>
         <div class="offcanvas-body">
             <div class="sidebar-single-item">
-                <p>We pride ourselves on attention to detail reliability and a customer-first approach that ensures satisfaction from start to finish from color consultation to coat</p>
+                <p data-i18n="page.single_service.offcanvasRight.p_0">We pride ourselves on attention to detail reliability and a customer-first approach that ensures satisfaction from start to finish from color consultation to coat</p>
 
                 <div class="newsletter-form">
                     <h3>Newsletter</h3>
                     <form class="position-relative z-1">
-                        <input type="email" class="form-control" placeholder="Enter Your Email">
+                        <input type="email" class="form-control" placeholder="Enter Your Email" data-i18n-placeholder="footer.email_placeholder">
                         <button type="submit" class="submit-btn position-absolute top-50 end-0 translate-middle-y">
                                 <img src="assets/images/send.svg" alt="send">
                             </button>
@@ -507,7 +515,7 @@
             </div>
             <div class="sidebar-single-item">
                 <div class="sidebar-info">
-                    <h3>Contact Info</h3>
+                    <h3 data-i18n="page.single_service.offcanvasRight.h3_0">Contact Info</h3>
 
                     <ul class="p-0 m-0 list-unstyled info-list">
                         <li class="d-flex">
@@ -516,7 +524,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <span class="fw-semibold d-block text-secondary">Location</span>
-                                <span>70 East 65th Street, New York City</span>
+                                <span data-i18n="page.single_service.offcanvasRight.span_0">70 East 65th Street, New York City</span>
                             </div>
                         </li>
                         <li class="d-flex">
@@ -525,7 +533,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <span class="fw-semibold d-block text-secondary">Email</span>
-                                <a href="/cdn-cgi/l/email-protection#345c5158585b7444515a40411a575b59"><span class="__cf_email__" data-cfemail="3b535e5757547b4b5e554f4e15585456">[email&#160;protected]</span></a>
+                                <a href="/cdn-cgi/l/email-protection#345c5158585b7444515a40411a575b59"><span class="__cf_email__" data-cfemail="3b535e5757547b4b5e554f4e15585456">[email&amp;#160;protected]</span></a>
                             </div>
                         </li>
                         <li class="d-flex">
@@ -541,7 +549,7 @@
                 </div>
             </div>
             <div class="sidebar-single-item">
-                <h3>Follow Us</h3>
+                <h3 data-i18n="footer.follow_us">Follow Us</h3>
 
                 <ul class="p-0 mb-0 list-unstyled d-flex align-items-center social-link">
                     <li>
@@ -581,7 +589,7 @@
                 <div class="modal-body d-flex justify-content-center align-items-center">
                     <form class="w-100" style="max-width: 500px;">
                         <div class="position-relative">
-                            <input id="searchInput" type="text" class="form-control bg-gray border-0" placeholder="Search">
+                            <input id="searchInput" type="text" class="form-control bg-gray border-0" placeholder="Search" data-i18n-placeholder="common.search">
                             <button class="border-0 bg-primary d-flex justify-content-center align-items-center position-absolute top-50 end-0 translate-middle-y m-2 my-0 rounded-3" type="button" style="width: 40px; height: 40px;">
                                     <i class="ti ti-search text-white"></i>
                                 </button>
@@ -597,11 +605,11 @@
     <div class="page-banner-area bg-img" style="background-image: url(assets/images/page-bg3.jpg);">
         <div class="container">
             <div class="page-banner-content text-center">
-                <h2 class="main-title mx-auto text-white mb-0">Service Details</h2>
+                <h2 class="main-title mx-auto text-white mb-0" data-i18n="page.single_service.page_banner_content.h2_0">Service Details</h2>
                 <ul class="d-flex p-0 mb-0 list-unstyled d-flex justify-content-center">
                     <li><a href="index.html">Home</a></li>
                     <li>
-                        <span>Service Details</span>
+                        <span data-i18n="page.single_service.page_banner_content.span_0">Service Details</span>
                     </li>
                 </ul>
             </div>
@@ -616,9 +624,9 @@
                 <div class="col-xl-4">
                     <div class="sidebar">
                         <div class="sidebar-widget widget-search bg-gray2">
-                            <h3>Search Here</h3>
+                            <h3 data-i18n="page.single_service.services_details_area.h3_0">Search Here</h3>
                             <form class="position-relative">
-                                <input type="text" class="form-control" placeholder="Search...">
+                                <input type="text" class="form-control" placeholder="Search..." data-i18n-placeholder="page.single_service.services_details_area.placeholder_0">
 
                                 <button type="submit" class="search-btn">
                                         <i class="ti ti-search"></i>
@@ -627,36 +635,36 @@
                         </div>
 
                         <div class="sidebar-widget bg-gray2">
-                            <h3>Service Category</h3>
+                            <h3 data-i18n="page.single_service.services_details_area.h3_1">Service Category</h3>
 
                             <ul class="category-list p-0 m-0 list-unstyled">
                                 <li>
                                     <a href="categories.html" class="d-flex justify-content-between align-items-center text-decoration-none">
-                                            <span>Interior Painting</span>
+                                            <span data-i18n="page.single_service.services_details_area.span_0">Interior Painting</span>
                                             <i class="ti ti-arrow-right"></i>
                                         </a>
                                 </li>
                                 <li>
                                     <a href="categories.html" class="d-flex justify-content-between align-items-center text-decoration-none">
-                                            <span>Wallpaper Design</span>
+                                            <span data-i18n="page.single_service.services_details_area.span_1">Wallpaper Design</span>
                                             <i class="ti ti-arrow-right"></i>
                                         </a>
                                 </li>
                                 <li>
                                     <a href="categories.html" class="d-flex justify-content-between align-items-center text-decoration-none">
-                                            <span>Exterior Painting</span>
+                                            <span data-i18n="page.single_service.services_details_area.span_2">Exterior Painting</span>
                                             <i class="ti ti-arrow-right"></i>
                                         </a>
                                 </li>
                                 <li>
                                     <a href="categories.html" class="d-flex justify-content-between align-items-center text-decoration-none">
-                                            <span>Wallpaper Removal</span>
+                                            <span data-i18n="page.single_service.services_details_area.span_3">Wallpaper Removal</span>
                                             <i class="ti ti-arrow-right"></i>
                                         </a>
                                 </li>
                                 <li>
                                     <a href="categories.html" class="d-flex justify-content-between align-items-center text-decoration-none">
-                                            <span>Tile installation</span>
+                                            <span data-i18n="page.single_service.services_details_area.span_4">Tile installation</span>
                                             <i class="ti ti-arrow-right"></i>
                                         </a>
                                 </li>
@@ -664,7 +672,7 @@
                         </div>
 
                         <div class="sidebar-widget bg-gray2">
-                            <h3>Popular Tags</h3>
+                            <h3 data-i18n="page.single_service.services_details_area.h3_2">Popular Tags</h3>
 
                             <ul class="p-0 m-0 list-unstyled d-flex flex-wrap tags">
                                 <li>
@@ -692,17 +700,17 @@
                         </div>
 
                         <div class="sidebar-widget bg-gray2">
-                            <h3>Get In Touch</h3>
+                            <h3 data-i18n="footer.get_in_touch">Get In Touch</h3>
 
                             <form>
                                 <div class="mb-4">
-                                    <input type="text" class="form-control" placeholder="Name">
+                                    <input type="text" class="form-control" placeholder="Name" data-i18n-placeholder="page.single_service.services_details_area.placeholder_1">
                                 </div>
                                 <div class="mb-4">
-                                    <input type="email" class="form-control" placeholder="Email">
+                                    <input type="email" class="form-control" placeholder="Email" data-i18n-placeholder="page.single_service.services_details_area.placeholder_2">
                                 </div>
                                 <div class="mb-4">
-                                    <textarea class="form-control" placeholder="Your Message" rows="5"></textarea>
+                                    <textarea class="form-control" placeholder="Your Message" rows="5" data-i18n-placeholder="page.single_service.services_details_area.placeholder_3"></textarea>
                                 </div>
                                 <button type="submit" class="default-btn border-0">
                                         <span>
@@ -717,8 +725,8 @@
                             <img src="assets/images/services14.jpg" class="rounded-top-4" alt="services">
 
                             <div class="services-content position-relative z-1">
-                                <h4 class="text-white fs-24 mb-3">Schedule your consultation</h4>
-                                <p class="text-white mb-4">Roller painting is a fast efficient and versatile method for covering large surfaces with a smooth even coat paint Ideal for walls and ceilings roller painting ensures</p>
+                                <h4 class="text-white fs-24 mb-3" data-i18n="page.single_service.services_content.h4_0">Schedule your&nbsp;consultation</h4>
+                                <p class="text-white mb-4" data-i18n="page.single_service.services_content.p_0">Roller painting is a fast efficient and versatile method for covering large surfaces with a smooth even coat paint Ideal for walls and ceilings roller painting ensures</p>
 
                                 <div class="d-flex align-items-center gap-20">
                                     <div class="flex-shrink-0">
@@ -727,7 +735,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <span class="d-block text-white">Emergency Call</span>
+                                        <span class="d-block text-white" data-i18n="page.single_service.services_content.span_0">Emergency Call</span>
                                         <a href="tel:+001(808)5550148" class="d-block fs-18 fw-medium text-white text-decoration-none">+001 (808) 5550148</a>
                                     </div>
                                 </div>
@@ -743,14 +751,14 @@
                             <img src="assets/images/services15.jpg" alt="services">
                         </div>
 
-                        <h2>Wallpaper Design Service</h2>
-                        <p>Wallpaper removal is an essential step in preparing walls for a fresh, updated look. Over time, old wallpaper can peel fade or become outdated, making removal necessary for a clean and smooth surface. Professional wallpaper removal
+                        <h2 data-i18n="page.single_service.details_content.h2_0">Wallpaper Design Service</h2>
+                        <p data-i18n="page.single_service.details_content.p_0">Wallpaper removal is an essential step in preparing walls for a fresh, updated look. Over time, old wallpaper can peel fade or become outdated, making removal necessary for a clean and smooth surface. Professional wallpaper removal
                             ensures the process</p>
-                        <p>Roller painting is a fast, efficient, and versatile method for covering large surfaces with a smooth, even coat of paint. Ideal for walls and ceilings, roller painting ensures consistent coverage with minimal streaks, making it
+                        <p data-i18n="page.single_service.details_content.p_1">Roller painting is a fast, efficient, and versatile method for covering large surfaces with a smooth, even coat of paint. Ideal for walls and ceilings, roller painting ensures consistent coverage with minimal streaks, making it
                             a popular choice for both residential and commercial projects. Using the right roller type and technique, this method allows for quicker application</p>
 
-                        <h3>Our Range of Customer Services</h3>
-                        <p>Professional tile installation ensures precise alignment, secure adhesion, and a flawless finish that can withstand moisture, heavy traffic, and daily wear. With its combination of beauty, functionality, and long-lasting performance,
+                        <h3 data-i18n="page.single_service.details_content.h3_0">Our Range of Customer Services</h3>
+                        <p data-i18n="page.single_service.details_content.p_2">Professional tile installation ensures precise alignment, secure adhesion, and a flawless finish that can withstand moisture, heavy traffic, and daily wear. With its combination of beauty, functionality, and long-lasting performance,
                             expertly installed tile adds value and elegance to any room. From subtle tones to bold statements, wall painting breathes new life into your space</p>
 
                         <div class="row g-4 mb-4 pt-2">
@@ -762,11 +770,11 @@
                             </div>
                         </div>
 
-                        <p>Tile installation is a durable and stylish solution for enhancing floors, walls, and surfaces in both residential and commercial spaces. Whether you're upgrading a bathroom, kitchen, or entryway, tile offers a wide range of design
+                        <p data-i18n="page.single_service.details_content.p_3">Tile installation is a durable and stylish solution for enhancing floors, walls, and surfaces in both residential and commercial spaces. Whether you're upgrading a bathroom, kitchen, or entryway, tile offers a wide range of design
                             options—from classic ceramics to modern porcelains and natural stones remove adhesive residue, and prepare</p>
 
-                        <h4>What’s covered in our service</h4>
-                        <p>Wall painting is one of the most effective ways to transform the look and feel of any space refreshing a single room or updating an entire property, the right paint color and finish can enhance mood, reflect personal style, and
+                        <h4 data-i18n="page.single_service.details_content.h4_0">What’s&nbsp;covered&nbsp;in our service</h4>
+                        <p data-i18n="page.single_service.details_content.p_4">Wall painting is one of the most effective ways to transform the look and feel of any space refreshing a single room or updating an entire property, the right paint color and finish can enhance mood, reflect personal style, and
                             create a clean</p>
 
                         <div class="row mt-3 pt-lg-4 g-3">
@@ -774,23 +782,23 @@
                                 <ul class="p-0 m-0 list-unstyled check-list">
                                     <li class="d-flex align-items-center gap-10">
                                         <i class="ti ti-circle-check text-primary fs-20"></i>
-                                        <span class="text-secondary fw-medium">Quality Painting Excellence</span>
+                                        <span class="text-secondary fw-medium" data-i18n="page.single_service.details_content.span_0">Quality Painting Excellence</span>
                                     </li>
                                     <li class="d-flex align-items-center gap-10">
                                         <i class="ti ti-circle-check text-primary fs-20"></i>
-                                        <span class="text-secondary fw-medium">Expert Consultation Assurance</span>
+                                        <span class="text-secondary fw-medium" data-i18n="page.single_service.details_content.span_1">Expert Consultation Assurance</span>
                                     </li>
                                     <li class="d-flex align-items-center gap-10">
                                         <i class="ti ti-circle-check text-primary fs-20"></i>
-                                        <span class="text-secondary fw-medium">Certified Painters Guarantee</span>
+                                        <span class="text-secondary fw-medium" data-i18n="page.single_service.details_content.span_2">Certified Painters Guarantee</span>
                                     </li>
                                     <li class="d-flex align-items-center gap-10">
                                         <i class="ti ti-circle-check text-primary fs-20"></i>
-                                        <span class="text-secondary fw-medium">Commercial Residential Multi-Level</span>
+                                        <span class="text-secondary fw-medium" data-i18n="page.single_service.details_content.span_3">Commercial Residential Multi-Level</span>
                                     </li>
                                     <li class="d-flex align-items-center gap-10">
                                         <i class="ti ti-circle-check text-primary fs-20"></i>
-                                        <span class="text-secondary fw-medium">Odor-Free Application</span>
+                                        <span class="text-secondary fw-medium" data-i18n="page.single_service.details_content.span_4">Odor-Free Application</span>
                                     </li>
                                 </ul>
                             </div>
@@ -798,23 +806,23 @@
                                 <ul class="p-0 m-0 list-unstyled check-list">
                                     <li class="d-flex align-items-center gap-10">
                                         <i class="ti ti-circle-check text-primary fs-20"></i>
-                                        <span class="text-secondary fw-medium">General Constructing</span>
+                                        <span class="text-secondary fw-medium" data-i18n="page.single_service.details_content.span_5">General Constructing</span>
                                     </li>
                                     <li class="d-flex align-items-center gap-10">
                                         <i class="ti ti-circle-check text-primary fs-20"></i>
-                                        <span class="text-secondary fw-medium">Building Maintenance & Renovation</span>
+                                        <span class="text-secondary fw-medium" data-i18n="page.single_service.details_content.span_6">Building Maintenance &amp; Renovation</span>
                                     </li>
                                     <li class="d-flex align-items-center gap-10">
                                         <i class="ti ti-circle-check text-primary fs-20"></i>
-                                        <span class="text-secondary fw-medium">Experienced Construction Professional</span>
+                                        <span class="text-secondary fw-medium" data-i18n="page.single_service.details_content.span_7">Experienced Construction Professional</span>
                                     </li>
                                     <li class="d-flex align-items-center gap-10">
                                         <i class="ti ti-circle-check text-primary fs-20"></i>
-                                        <span class="text-secondary fw-medium">Eco-Friendly Cleaning Products</span>
+                                        <span class="text-secondary fw-medium" data-i18n="page.single_service.details_content.span_8">Eco-Friendly Cleaning Products</span>
                                     </li>
                                     <li class="d-flex align-items-center gap-10">
                                         <i class="ti ti-circle-check text-primary fs-20"></i>
-                                        <span class="text-secondary fw-medium">Customized Cleaning Packages</span>
+                                        <span class="text-secondary fw-medium" data-i18n="page.single_service.details_content.span_9">Customized Cleaning Packages</span>
                                     </li>
                                 </ul>
                             </div>
@@ -834,12 +842,12 @@
                     <div class="col-lg-6">
                         <div class="subscribe-content">
                             <span class="top-title">NEWSLETTER</span>
-                            <h2 class="main-title">Subscribe To Our Newsletter</h2>
+                            <h2 class="main-title" data-i18n="page.single_service.subscribe_content.h2_0">Subscribe To Our Newsletter</h2>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <form class="position-relative z-1 mb-3">
-                            <input type="email" class="form-control" placeholder="Enter Your Email">
+                            <input type="email" class="form-control" placeholder="Enter Your Email" data-i18n-placeholder="footer.email_placeholder">
                             <button type="submit" class="default-btn position-absolute top-50 end-0 translate-middle-y bg-primary border-0 rounded-2">
                                     <span class="d-flex align-items-center gap-6">
                                         <img src="assets/images/send.svg" alt="send">
@@ -850,7 +858,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                             <label class="form-check-label" for="checkDefault">
-                                    I agree to the <a href="terms-conditions.html" class="text-secondary fw-semibold text-decoration-none">Terms & Conditions</a>
+                                    I agree to the <a href="terms-conditions.html" class="text-secondary fw-semibold text-decoration-none" data-i18n="footer.terms_conditions">Terms &amp; Conditions</a>
                                 </label>
                         </div>
                     </div>
@@ -870,11 +878,11 @@
                                 <img src="assets/images/white-logo.svg" alt="white-logo">
                             </a>
 
-                        <p class="text-white">Unlike traditional foiling methods digital foiling allows for precise application without the need for dies or plates making it faster more</p>
+                        <p class="text-white" data-i18n="page.single_service.footer_single_widget.p_0">Unlike traditional foiling methods digital foiling allows for precise application without the need for dies or plates making it faster more</p>
 
                         <ul class="p-0 mb-0 list-unstyled social-link d-flex gap-10 align-items-center">
                             <li>
-                                <span class="text-white">Follow Us:</span>
+                                <span class="text-white" data-i18n="page.single_service.footer_single_widget.span_0">Follow Us:</span>
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/" target="_blank">
@@ -896,30 +904,30 @@
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-single-widget ms-xl-5">
-                        <h3>Our Services</h3>
+                        <h3 data-i18n="footer.our_services">Our Services</h3>
 
                         <ul class="import-link p-0 m-0 list-unstyled">
                             <li>
-                                <a href="single-service.html">Home Painting</a>
+                                <a href="single-service.html" data-i18n="page.single_service.footer_single_widget.a_0">Home Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Commercial Painting</a>
+                                <a href="single-service.html" data-i18n="page.single_service.footer_single_widget.a_1">Commercial Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Interior Painting</a>
+                                <a href="single-service.html" data-i18n="page.single_service.footer_single_widget.a_2">Interior Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Exterior Painting</a>
+                                <a href="single-service.html" data-i18n="page.single_service.footer_single_widget.a_3">Exterior Painting</a>
                             </li>
                             <li>
-                                <a href="single-service.html">Custom Finishes</a>
+                                <a href="single-service.html" data-i18n="page.single_service.footer_single_widget.a_4">Custom Finishes</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-single-widget ms-xl-5">
-                        <h3>Get In Touch</h3>
+                        <h3 data-i18n="footer.get_in_touch">Get In Touch</h3>
 
                         <ul class="p-0 m-0 list-unstyled info-list">
                             <li class="d-flex">
@@ -928,7 +936,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <span class="d-block text-white fw-bold fs-18 mb-1">Location</span>
-                                    <p>70 East 65th Street, New York City</p>
+                                    <p data-i18n="page.single_service.footer_single_widget.p_1">70 East 65th Street, New York City</p>
                                 </div>
                             </li>
                             <li class="d-flex">
@@ -937,7 +945,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <span class="d-block text-white fw-bold fs-18 mb-1">Email</span>
-                                    <a href="/cdn-cgi/l/email-protection#80e8e5ececefc0f0e5eef4f5aee3efed"><span class="__cf_email__" data-cfemail="29414c45454669594c475d5c074a4644">[email&#160;protected]</span></a>
+                                    <a href="/cdn-cgi/l/email-protection#80e8e5ececefc0f0e5eef4f5aee3efed"><span class="__cf_email__" data-cfemail="29414c45454669594c475d5c074a4644">[email&amp;#160;protected]</span></a>
                                 </div>
                             </li>
                             <li class="d-flex">
@@ -1005,11 +1013,11 @@
     <div class="copy-right-area">
         <div class="container mw-1690">
             <div class="d-flex flex-wrap gap-10 justify-content-center justify-content-lg-between align-items-center">
-                <p class="mb-0"><span>© Pentu.</span> All Rights Reserved by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                <p class="mb-0"><span data-i18n="page.single_service.content.span_1">© Qatar Paint.</span> All Rights Reserved by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
 
                 <div class="d-flex flex-wrap gap-5 policy">
-                    <a href="privacy-policy.html" class="text-decoration-none">Privacy Policy</a>
-                    <a href="terms-conditions.html" class="text-decoration-none">Terms & Conditions</a>
+                    <a href="privacy-policy.html" class="text-decoration-none" data-i18n="footer.privacy_policy">Privacy Policy</a>
+                    <a href="terms-conditions.html" class="text-decoration-none" data-i18n="footer.terms_conditions">Terms &amp; Conditions</a>
                 </div>
             </div>
         </div>
@@ -1045,14 +1053,15 @@
     <!-- End RTL & Dark Switch Area -->
 
     <!-- Link Of JS File -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer=""></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/scrollCue.min.js"></script>
     <script src="assets/js/fslightbox.js"></script>
     <script src="assets/js/ukiyo.min.js"></script>
     <script src="assets/js/lenis.js"></script>
-    <script src="assets/js/custom.js"></script>
-</body>
+    
+		<script src="assets/js/i18n.js"></script><script src="assets/js/custom.js"></script>
 
-</html>
+
+</body></html>
